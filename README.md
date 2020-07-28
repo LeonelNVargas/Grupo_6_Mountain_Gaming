@@ -30,3 +30,9 @@ logg.com.ar
 -Leonel Vargas
 -Lautaro Leiva
 -Ignacio Castillo
+
+### Tablero
+
+este es nuestro [tablero][Trello]
+
+[Trello]: (https://trello.com/b/WlDrtjdI/proyecto-integrador-mountain-gaming-grupo-n6)
