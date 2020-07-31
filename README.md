@@ -27,12 +27,14 @@ ventas en el mundo de la computación tales como:
 
 ### Nuestro Equipo:
 
--Leonel Vargas  
--Lautaro Leiva  
--Ignacio Castillo
+-Leonel Vargas:  
+  
+-Lautaro Leiva:  
+25 años, de mente curiosa y apasionado por el dibujo y la animación. Cree que una buena pagina debe  
+estar perfectamente equilibrada entre la eficencia y una estetica visual agradable para el usuario.  
+-Ignacio Castillo:  
+
 
 ### Tablero
 
-este es nuestro [tablero][Trello]
-
-[Trello]: (https://trello.com/b/WlDrtjdI/proyecto-integrador-mountain-gaming-grupo-n6)
+este es nuestro [tablero](https://trello.com/b/WlDrtjdI/proyecto-integrador-mountain-gaming-grupo-n6)
