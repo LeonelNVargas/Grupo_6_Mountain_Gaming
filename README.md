@@ -29,4 +29,10 @@ ventas en el mundo de la computación tales como:
 
 -Leonel Vargas  
 -Lautaro Leiva  
--Ignacio Castillo  
+-Ignacio Castillo
+
+### Tablero
+
+este es nuestro [tablero][Trello]
+
+[Trello]: (https://trello.com/b/WlDrtjdI/proyecto-integrador-mountain-gaming-grupo-n6)
