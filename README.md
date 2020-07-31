@@ -17,16 +17,16 @@ sistema de atencion al cliente via email y paginas sociales como Twitter, Facebo
 Para la creación de las estructuras y diseño nos hemos enfocado en sitios especializados en el ambito de
 ventas en el mundo de la computación tales como:
 
-Compragamer.com
-Compugarden.com.ar
-fullh4rd.com.ar
-gezatek.com.ar
-logg.com.ar
+[CompraGamer](https://www.Compragamer.com)  
+[CompuGarden](https://www.Compugarden.com.ar)  
+[Fullh4rd](https://www.fullh4rd.com.ar)  
+[Gezatek](https://wwww.gezatek.com.ar)  
+[Logg](https://wwww.logg.com.ar)
 
 
 
 ### Nuestro Equipo:
 
--Leonel Vargas
--Lautaro Leiva
--Ignacio Castillo
+-Leonel Vargas  
+-Lautaro Leiva  
+-Ignacio Castillo  
