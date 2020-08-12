@@ -1,5 +1,6 @@
 :root{
     --color-azul: #08162B;
+    --color-celeste: rgba(136, 216, 240, 0.507)
 }
 
 * {
@@ -11,11 +12,6 @@ body {
     box-sizing: border-box;
     background-color: var(--color-azul)
 }
-
-#primerrow{
-    border-bottom: 3px solid white;
-}
-
 /*header*/
 
 .row.barrabusqueda {
@@ -69,65 +65,45 @@ i.fas.fa-cart-plus {
 .row.navegacion ul li :hover{
     color: rgb(255, 81, 0);
 }
+/****aca termina header****/
 
-/*menu categoria*/
-#botoncategorias button{
-    position: relative;
-    left: 45%;
-    background-color: orange;
-    margin-bottom: 5px;
+/****aca empieza contenido producto.html****/
+.container{
+    overflow: hidden;
 }
-
-#botoncategorias{
-    margin-top: 5px;
-}
-
-#botoncategorias ul li{
-    background-color: skyblue;
-    text-align: center;
-    font-weight: bold;
+section{
+    background-color: var(--color-celeste);
     border: 1px solid white;
     border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
 }
-
-#botoncategorias ul li a{
-    text-decoration: none;
-    color: var(--color-azul);
-}
-
-#botoncategorias ul :hover{
-    background-color: orange;
-}
-
-#botoncategorias ul h6#cate{
-    font-weight: bold;
-    border-bottom: 1px solid white;
-    padding-bottom: 5px;
-    text-align: center;
-    color: silver;
-    font-size: 25px;
-}
-
-/*articulos*/
-
-h3{
-    color: silver;
-    text-align: center;
-    font-weight: bold;
+section img{
     margin-top: 5px;
-}
-
-.iconomas i{
-    color: orange;
+    width: 50%;
     position: relative;
-    left: 50%;
-    top: 0;
+    left: 25%;
 }
 
-/*footer*/
+section form{
+    text-align: center;
+}
 
+section form button{
+    font-size: 30px;
+    background-color: orange;
+    border-radius: 10px;
+    font-weight: bold;
+}
+section form button:hover{
+    color: var(--color-azul);
+    background-color: orangered;
+}
+
+.relacionados{
+    color: silver;
+}
+/****aca termina contenido producto.html****/
+
+/****footer****/
 footer{
     width: 100%;
 }
@@ -211,7 +187,7 @@ footer{
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1140px){
     button.lupa{
         position: absolute;
         left: 25%;
