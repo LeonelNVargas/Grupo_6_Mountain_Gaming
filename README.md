@@ -27,12 +27,13 @@ ventas en el mundo de la computación tales como:
 
 ### Nuestro Equipo:
 
--Leonel Vargas:  
+-Leonel Vargas:
+23 años, dibujante como hobbie, tranquilidad y paciencia son mi lema.
   
 -Lautaro Leiva:  
 25 años, de mente curiosa y apasionado por el dibujo y la animación. Cree que una buena pagina debe  
 estar perfectamente equilibrada entre la eficencia y una estetica visual agradable para el usuario.  
--Ignacio Castillo:  
+ 
 
 
 ### Tablero
