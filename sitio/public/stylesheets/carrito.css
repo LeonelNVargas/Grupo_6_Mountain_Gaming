@@ -1,0 +1,121 @@
+:root {
+    --color-azul:  #08162B;
+    --color-celeste:  rgba(136, 216, 240, 0.507);
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: var(--color-azul);
+}
+
+/*seccion: productos*/
+
+.container section{
+    background-color: rgba(96, 161, 187, 0.589);
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+section .producto{
+    display: flex;
+}
+
+.row h4 {
+    color: var(--color-azul);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+form{
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    margin-left: 1px;
+}
+
+form button.eliminar{
+    position: relative;
+    bottom: 45px;
+    left: 35%;
+}
+h4.productos{
+    font-weight: bold;
+}
+
+h5{
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+h5.productoinfo{
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+h6.precio{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    position: relative;
+    left: 10px;
+    top: 20px
+}
+
+/******/
+
+h4.titulos{
+    margin-top: 5px;
+    color: silver;
+}
+
+/***Comprar***/
+
+.container #comprarbtn form button{
+    margin-top: 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: orange;
+    font-weight: bold;
+}
+.container #comprarbtn form button :hover{
+    color: orangered;
+}
+
+h5#preciototal{
+    font-size: 25px;
+    margin-top: 10px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+    color: silver;
+}
+
+@media(min-width: 768px){
+    h6.precio{
+        font-size: 15px;
+    }
+
+    h4.titulos{
+        font-size: 30px;
+    }
+    form{
+        font-size: 15px;
+    }
+
+    #formasenvio{
+        position: relative;
+        left: 50%;
+        bottom: 85px;
+    }
+}
+
+@media(min-width:1140px){
+    h6.precio{
+        left: 15%;
+    }
+}

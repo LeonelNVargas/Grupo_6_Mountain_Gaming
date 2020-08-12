@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <%- include('partials/head') %>
+  <link rel="stylesheet" type="text/css"   href="stylesheets/style.css">
+  <%- include('partials/header') %>  
+<body>
+
+<!--navegacion-->
+<div class="container-fluid">
+    <div class="container">
+    <div class="row" id="primerrow">
+      <div class="col-12 col-md-5">
+      <nav id="botoncategorias" class="navbar-expand-md">
+       <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="menu navbar-nav mr-auto"><h6 id="cate">Categorias:</h6>
+         <li><a href="">Procesadores</a></li>
+         <li><a href="">Motherboards</a></li>
+         <li><a href="">Almacenamiento</a></li>
+          <li><a href="">RAM</a></li>
+          <li><a href="">Gabinetes</a></li>
+          <li><a href="">Fuentes</a></li>
+          <li><a href="">Pantallas</a></li>
+          <li><a href="">Otros</a></li>
+       </ul>
+       </div>
+     </nav>
+     </div>
+ 
+   <div class="col-12 col-md-7">
+   <h3 class="titulosarticulos">Ofertas</h3>
+   <section>
+   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item active" data-interval="10000">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item" data-interval="2000">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="sr-only">Atrás</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="sr-only">Adelante</span>
+     </a>
+   </div>
+   <a href="#" class="iconomas"><i class="fas fa-plus"></i></a>
+ </section>
+ 
+     <h3>Destacados</h3>
+   <section>
+   <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+     <div class="carousel-inner">
+       <div class="carousel-item active" data-interval="10000">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item" data-interval="2000">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+       <div class="carousel-item">
+         <img src="./images/pcmuestra.png" class="d-block w-100" alt="...">
+       </div>
+     </div>
+     <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="sr-only">Atrás</span>
+     </a>
+     <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="sr-only">Adelante</span>
+     </a>
+   </div>
+   <a href="#" class="iconomas"><i class="fas fa-plus"></i></a>
+   </section>
+   </div>
+  </div>
+ </div>
+<div class="container-fluid">
+<footer class="nav justify-content-center" id="sponsors">
+  <div>
+    <h5>SPONSORS</h5>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, laborum?</p>
+  </div>
+</div>
+</footer>
+<%- include('partials/footer') %> 
+</body>
+</html>
