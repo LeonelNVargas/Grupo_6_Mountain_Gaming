@@ -1,0 +1,11 @@
+.container{
+    overflow: hidden;
+}
+
+.container .row section#producto{
+    display: flex
+}
+
+.container .row section img#imagenmuestra{
+    background-color: red;
+}

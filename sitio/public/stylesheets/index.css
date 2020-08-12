@@ -160,12 +160,14 @@ footer{
     background-color: rgba(134, 188, 212, 0.534);
     width: 100%;
 }
+
 #sponsors h5{
     text-align: center;
     border-bottom: 1px solid orange;
     color: white;
     font-weight: bolder;
 }
+
 #sponsors.p{
     color: white;
 }
