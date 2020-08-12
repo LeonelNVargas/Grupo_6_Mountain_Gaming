@@ -1,0 +1,222 @@
+:root{
+    --color-azul: #08162B;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--color-azul)
+}
+
+#primerrow{
+    border-bottom: 3px solid white;
+}
+
+/*header*/
+
+.row.barrabusqueda {
+    background-color: rgba(136, 216, 240, 0.507);
+}
+
+.row.barrabusqueda form input#busqueda{
+    margin-top: 5px;
+}
+
+button.lupa{
+    position: absolute;
+    left: 77%;
+    top: 18%;
+    border: none;
+    background-color: transparent;
+}
+
+/*Iconos Usuario y Carrito*/
+i.fas.fa-user {
+    color: orange;
+}
+
+i.fas.fa-cart-plus {
+    color: orange;
+}
+
+/*barra header navegacion*/
+
+.row.navegacion{
+    background-color: rgba(136, 216, 240, 0.507);
+    margin-bottom: 10px;
+}
+
+.row.navegacion .secciones{
+    position: relative;
+    top: 5px;
+}
+
+.row.navegacion ul li{
+    color: silver;
+    font-size: 15px;
+    display: inline;
+}
+
+.row.navegacion ul li a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+.row.navegacion ul li :hover{
+    color: rgb(255, 81, 0);
+}
+/***aca termina header***/
+
+/*menu categoria*/
+#botoncategorias button{
+    position: relative;
+    left: 45%;
+    background-color: orange;
+    margin-bottom: 5px;
+}
+
+#botoncategorias{
+    margin-top: 5px;
+}
+
+#botoncategorias ul li{
+    background-color: skyblue;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#botoncategorias ul li a{
+    text-decoration: none;
+    color: var(--color-azul);
+}
+
+#botoncategorias ul :hover{
+    background-color: orange;
+}
+
+#botoncategorias ul h6#cate{
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    text-align: center;
+    color: silver;
+    font-size: 25px;
+}
+
+/*articulos*/
+
+h3{
+    color: silver;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.iconomas i{
+    color: orange;
+    position: relative;
+    left: 50%;
+    top: 0;
+}
+
+/*footer*/
+
+footer{
+    width: 100%;
+}
+
+#contacto{
+    color: silver;
+    padding: 10px;
+    text-align: center;
+}
+
+.redes a{
+    margin: 3px;
+    color: orange
+}
+
+#copyright{
+    background-color: rgba(136, 216, 240, 0.507);
+}
+
+#copyright p{
+    color: white;
+    margin-top: 10px;
+    opacity: 0.70;
+}
+
+
+@media (min-width: 768px) {
+    /*header: barra busqueda*/
+    button.lupa{
+        position: absolute;
+        left: 42%;
+        top: 18%;
+        border: none;
+        background-color: transparent;
+    }
+    .navbar-expand-md{
+        font-size: 25px;
+    }
+    .navbar-expand-md .navbar-nav{
+        flex-direction: column;
+    }
+
+    /*header: banner*/
+    .img-fluid {
+        max-width: 50%;
+        height: auto;
+        position: relative;
+        left: 25%;
+    }
+
+    /*secciones: arma tu pc, ayuda, sucursales, etc*/
+    .row.navegacion .secciones{
+        position: relative;
+        top: 10px
+    }
+
+    /*footer*/
+    ul.redes{
+       display: grid;
+    }
+}
+
+@media (min-width: 992px) {
+    button.lupa{
+        position: absolute;
+        left: 30%;
+        border: none;
+        background-color: transparent;
+    }
+
+    /*footer*/
+    #contacto{
+        color: silver;
+        position: relative;
+        bottom: -15px
+    }
+
+    ul.redes{
+        position: relative;
+        top: 5%
+    }
+}
+
+@media (min-width: 1200px){
+    button.lupa{
+        position: absolute;
+        left: 25%;
+        border: none;
+        background-color: transparent;
+    }
+}
