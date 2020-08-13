@@ -27,7 +27,7 @@ ventas en el mundo de la computación tales como:
 
 ### Nuestro Equipo:
 
--Leonel Vargas:
+-Leonel Vargas:  
 23 años, dibujante como hobbie, tranquilidad y paciencia son mi lema.
   
 -Lautaro Leiva:  
@@ -39,3 +39,13 @@ estar perfectamente equilibrada entre la eficencia y una estetica visual agradab
 ### Tablero
 
 este es nuestro [tablero](https://trello.com/b/WlDrtjdI/proyecto-integrador-mountain-gaming-grupo-n6)
+  
+
+### Diseño  
+
+enlace a nuestra carpeta de [diseño](https://github.com/LeonelNVargas/Grupo_6_Mountain_Gaming/tree/master/Diseño)  
+
+
+### Wireframe  
+
+enlace a nuestra carpeta de [wireframe](https://github.com/LeonelNVargas/Grupo_6_Mountain_Gaming/tree/master/Wireframe)
