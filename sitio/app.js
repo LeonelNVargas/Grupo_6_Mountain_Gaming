@@ -6,9 +6,9 @@ var logger = require('morgan');
 
 //importo rutas
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-var carrito = require('./routes/carrito');
-var detalleproducto = require('./routes/detalleproducto');
+var userRouter = require('./routes/users');
+var carritoRouter = require('./routes/carrito');
+var detalleproductoRouter = require('./routes/detalleproducto');
 
 var app = express();
 
@@ -24,10 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //Utilizo rutas
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/carrito', carrito);
-app.use('/producto', detalleproducto);
-
+app.use('/user', userRouter);
+app.use('/carrito', carritoRouter);
+app.use('/producto', detalleproductoRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

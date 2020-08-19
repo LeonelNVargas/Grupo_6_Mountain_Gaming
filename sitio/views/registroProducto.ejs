@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<body>
+<main>
+
+    <div>
+        <h2>Agrega un producto!</h2>
+    
+        <form action="POST">
+    
+            <p>
+            <label for="">Nombre producto:</label>
+            <input type="text">
+            </p>
+                
+            <p>
+            <label for="">Proveedor:</label>
+            <select name="proveedor" id="">
+                <option value="proveedor A">proveedor A</option>
+                <option value="proveedor B">proveedor B</option>
+                <option value="proveedor C">proveedor C</option>
+            </select>
+            </p>
+                
+            <p>
+            <label for="">Tipo de producto:</label>
+            <select name="" id="">
+                <option value="">Tipo A</option>
+                <option value="">Tipo B</option>
+                <option value="">Tipo C</option>
+            </select>
+            </p>
+                
+            <p>
+            <label for="">Precio:</label>
+            <input type="number">
+            </p>
+                
+    
+            <p>
+            Descripcion:
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+                
+            <p>
+            <label for="">Cantidad:</label>
+            <input type="number" name="" id="">
+           </p>
+                
+            <p>
+            <label for="Envio">Envio:</label>
+            <input type="radio" name="Envio" value="si">si
+            <input type="radio" name="Envio" value="no">no
+            </p>
+                
+    
+            <p>
+            Agregar fotos
+            <img src="" alt="">
+            </p>
+            
+    
+            <button type="submit">Agregar</button>
+            </form>
+    </div>
+</main>
+<%- include('partials/footer') %>
+</body>
+</html>
