@@ -12,31 +12,44 @@
       </div>
     
     <div class="col-4">
-      <a href="#home"><img src="/images/banner.png" id="banner"></a>
+      <a href="/"><img src="/images/banner.png" id="banner"></a>
     </div>
 
 
     <div class="col-4">
-      <ul class="nav justify-content-end" id="usuarioycarrito">
-        <li class="nav-item">
-        <a class="nav-link active" href="#"><i class="fas fa-user"></i></a>
+      <div class="btn-group" id="botoningresoyregistro">
+        <button type="button" class="btn btn-default dropdown-toggle"data-toggle="dropdown">
+          <i class="fas fa-user"></i>
+        <span class="caret"></span>
+        </button>
+      
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="user/registro" id="ingresoyregistro">Ingresar / Registrarse</a></li>
+        </ul>
+        <li class="nav-item" id="carrito">
+          <a class="nav-link" href="carrito" id="cajacarrito"><i class="fas fa-cart-plus"></i></a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-cart-plus"></i></a>
-        </li>
-      </ul>
+      </div>
     </div>
   </div>
-    
+
 <!---navegacion-->
     <div class="row">
-      <div class="col-12 nav justify-content-center" id="navegacion">
-        <ul class="secciones">
-        <li><img src="images/icono.png" width="40" style="padding-right: 5px;"></li>
-        <li><a href="#">Armá tu PC!</a></li>
-        <li><a href="#">Sucursales</a></li>
-        <li><a href="#">Sobre nosotros</a></li>
-        <li><a href="#">Ayuda</a></li>
+      <div class="col-12" id="navegacion">
+        <ul class="nav justify-content-center">
+          <img src="images/icono.png" class="icononavegacion">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Arma tu Pc</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ayuda</a>
+          </li>
         </ul>
       </div>
     </div>
