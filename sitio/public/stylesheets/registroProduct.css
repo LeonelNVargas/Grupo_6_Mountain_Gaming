@@ -11,3 +11,8 @@ button{
     font-weight: bold;
     margin: 10px;
 }
+
+.formfield *{
+    vertical-align: middle;
+    resize: none;
+}

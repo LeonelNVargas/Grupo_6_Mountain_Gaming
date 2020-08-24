@@ -102,7 +102,7 @@ i.fas.fa-cart-plus {
 .row #navegacion ul li a:hover{
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.664));
     border-radius: 20px;
-    color: orangered
+    color: red
 }
 
 .row #navegacion ul li a{
@@ -111,41 +111,12 @@ i.fas.fa-cart-plus {
     font-weight: bolder;
 }
 
-
-/*main*/
-#mensajes h5{
-    color: rgb(0, 153, 153);
-    font-weight: bolder;
-}
-#mensajes p{
-    color:  rgb(0, 153, 153);
-    font-weight: bolder;
-}
-
-#botoncategorias button{
-    position: relative;
-    left: 45%;
+button{
+    border-radius: 5px;
     background-color: orange;
-    margin-bottom: 5px;
-}
-
-#botoncategorias{
-    margin-top: 5px;
-}
-
-#botoncategorias ul li{
-    background-color: skyblue;
-    text-align: center;
+    border: orange solid 1px;
     font-weight: bold;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-}
-
-#botoncategorias ul li a{
-    text-decoration: none;
-    color: var(--color-azul);
+    margin: 10px;
 }
 
 /*footer*/
@@ -165,7 +136,7 @@ footer{
     color: orange
 }
 .redes a :hover{
-    color: orangered;
+    color: red;
 }
 
 #copyright p{
@@ -218,7 +189,7 @@ footer{
         flex-direction: column;
     }
 
-    /*secciones: arma tu pc, ayuda, sucursales, etc*/
+    /*header: secciones*/
     .icononavegacion{
         width: 6%;
         position: relative;

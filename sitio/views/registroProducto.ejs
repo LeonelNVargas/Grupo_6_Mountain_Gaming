@@ -5,67 +5,71 @@
 <%- include('partials/header') %>
 
 <main>
-
-    <div>
-        <h2>Agrega un producto!</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+        <h2>¡Agrega un producto!</h2>
     
         <form action="POST">
     
-            <p>
+            <div>
             <label for="">Nombre producto:</label>
             <input type="text">
-            </p>
+            </div>
                 
-            <p>
+            <div>
             <label for="">Proveedor:</label>
             <select name="proveedor" id="">
                 <option value="proveedor A">proveedor A</option>
                 <option value="proveedor B">proveedor B</option>
                 <option value="proveedor C">proveedor C</option>
             </select>
-            </p>
+        </div>
                 
-            <p>
+            <div>
             <label for="">Tipo de producto:</label>
             <select name="" id="">
                 <option value="">Tipo A</option>
                 <option value="">Tipo B</option>
                 <option value="">Tipo C</option>
             </select>
-            </p>
+            </div>
                 
-            <p>
+            <div>
             <label for="">Precio:</label>
             <input type="number">
-            </p>
+            </div>
                 
     
-            <p>
-            Descripcion:
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            </p>
+            <div class="formfield">
+                <label for="textarea">Descripción:</label>
+                <textarea id="textarea" col="30" rows="10"></textarea>
+            </div>
                 
-            <p>
+            <div>
             <label for="">Cantidad:</label>
             <input type="number" name="" id="">
-           </p>
+            </div>
                 
-            <p>
+            <div>
             <label for="Envio">Envio:</label>
             <input type="radio" name="Envio" value="si">si
             <input type="radio" name="Envio" value="no">no
-            </p>
+            </div>
                 
     
-            <p>
+            <div>
             Agregar fotos
             <img src="" alt="">
-            </p>
+            </div>
             
     
             <button type="submit">Agregar</button>
             </form>
-    </div>
+        
+        </div>
+    </div>    
+</div>
 </main>
 <%- include('partials/footer') %>
 </body>

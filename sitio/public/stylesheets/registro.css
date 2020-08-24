@@ -10,10 +10,24 @@ main div{
     margin: 5% 0%;
 }
 
-button{
-    border-radius: 5px;
-    background-color: orange;
-    border: orange solid 1px;
-    font-weight: bold;
-    margin: 10px;
+@media(min-width: 768px){
+    .inputUno {
+        position: relative;
+        left: 16%;
+    }
+    
+    .inputDos{
+        position: relative;
+        left: 18%;
+    }
+    
+    .inputTres{
+        position: relative;
+        left: 11%;
+    }
+
+    .inputCuatro{
+        position: relative;
+        left: 20px;
+    }
 }

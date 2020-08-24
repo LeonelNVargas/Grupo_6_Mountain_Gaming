@@ -1,6 +1,6 @@
 /*seccion: productos*/
 
-.container section{
+section{
     background-color: rgba(96, 161, 187, 0.589);
     margin: 2px;
     border-radius: 5px;
@@ -9,11 +9,6 @@
 
 section .producto{
     display: flex;
-}
-
-.row h4 {
-    color: var(--color-azul);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 form{
@@ -64,8 +59,8 @@ h4.titulos{
     background-color: orange;
     font-weight: bold;
 }
-.container #comprarbtn form button :hover{
-    color: orangered;
+ .container #comprarbtn form button:hover{
+    background-color: orangered
 }
 
 h5#preciototal{
@@ -96,7 +91,7 @@ h5#preciototal{
     }
 }
 
-@media(min-width:1140px){
+@media(min-width:768px){
     h6.precio{
         left: 15%;
     }
