@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 
 //registro
 router.get('/registro', controller.registro);
+router.post('/registro', controller.registracion);
 
 //editar usuario
 

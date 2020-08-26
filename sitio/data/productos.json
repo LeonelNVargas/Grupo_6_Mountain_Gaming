@@ -4,6 +4,7 @@
     "description": "Procesador AMD de gamma baja",
     "image": "noimage.png",
     "category": "Procesadores",
+    "amount": 1,
     "price": 6000,
     "discount": 5
     },
@@ -12,6 +13,7 @@
     "description": "Procesador AMD de gamma baja",
     "image": "noimage.png",
     "category": "Procesadores",
+    "amount": 4,
     "price": 11000,
     "discount": 10
     },
@@ -20,6 +22,7 @@
     "description": "Placa Madre",
     "image": "noimage.png",
     "category": "Motherboards",
+    "amount": 1,
     "price": 7000,
     "discount": 0
     },
@@ -28,6 +31,7 @@
     "description": "Placa madre",
     "image": "noimage.png",
     "category": "Motherboards",
+    "amount": 2,
     "price": 12000,
     "discount": 0
     },
@@ -36,6 +40,7 @@
     "description": "Disco solido de 240GB de almacenamiento",
     "image": "noimage.png",
     "category": "Almacenamiento",
+    "amount": 4,
     "price": 2500,
     "discount": 0
     },
@@ -44,6 +49,7 @@
     "description": "Disco duro de 1TB de almacenamiento",
     "image": "noimage.png",
     "category": "Almacenamiento",
+    "amount": 4,
     "price": 4300,
     "discount": 0
     },
@@ -52,6 +58,7 @@
     "description": "Memoria Ram Kingston de 4GB",
     "image": "noimage.png",
     "category": "RAM",
+    "amount": 1,
     "price": 2500,
     "discount": 5
     },
@@ -60,6 +67,7 @@
     "description": "Gabinete ATX",
     "image": "noimage.png",
     "category": "Gabinetes",
+    "amount": 0,
     "price": 6000,
     "discount": 10
     },
@@ -68,6 +76,7 @@
     "description": "Gabinete M-ATX",
     "image": "noimage.png",
     "category": "Gabinetes",
+    "amount": 1,
     "price": 3500,
     "discount": 0
     },
@@ -76,6 +85,7 @@
     "description": "Fuente de 500w PLUS BRONCE",
     "image": "noimage.png",
     "category": "Fuentes",
+    "amount": 2,
     "price": 7000,
     "discount": 15
     },
@@ -85,6 +95,7 @@
     "description": "Fuente generica de 250w",
     "image": "noimage.png",
     "category": "Fuentes",
+    "amount": 1,
     "price": 2500,
     "discount": 0
     },
@@ -94,6 +105,7 @@
     "description": "Pantalla de 1400px",
     "image": "noimage.png",
     "category": "Pantallas",
+    "amount": 5,
     "price": 17000,
     "discount": 5
     },
@@ -103,6 +115,7 @@
     "description": "Pantalla de 1000px",
     "image": "noimage.png",
     "category": "Pantallas",
+    "amount": 2,
     "price": 12000,
     "discount": 10
     },
@@ -112,6 +125,7 @@
     "description": "Auriculares con Microfono",
     "image": "noimage.png",
     "category": "Otros",
+    "amount": 10,
     "price": 700,
     "discount": 0
     },
@@ -120,6 +134,7 @@
     "description": "Auriculares sin Microfono",
     "image": "noimage.png",
     "category": "Otros",
+    "amount": 5,
     "price": 400,
     "discount": 0
     }

@@ -5,33 +5,27 @@
 <%- include('partials/header') %>
 
 <main>
-<div class="container">
+<h2 class="justify-content-center">¡Agrega un producto!</h2>
+<section class="container">
     <div class="row">
-        <div class="col-12">
-        <h2>¡Agrega un producto!</h2>
-    
+        <div class="col-12">    
         <form action="POST">
-    
             <div>
-            <label for="">Nombre producto:</label>
+            <label for="">Nombre:</label>
             <input type="text">
             </div>
-                
+
             <div>
-            <label for="">Proveedor:</label>
-            <select name="proveedor" id="">
-                <option value="proveedor A">proveedor A</option>
-                <option value="proveedor B">proveedor B</option>
-                <option value="proveedor C">proveedor C</option>
-            </select>
-        </div>
-                
-            <div>
-            <label for="">Tipo de producto:</label>
+            <label for="">Categoria:</label>
             <select name="" id="">
-                <option value="">Tipo A</option>
-                <option value="">Tipo B</option>
-                <option value="">Tipo C</option>
+                <option value="">Procesadores</option>
+                <option value="">Motherboards</option>
+                <option value="">Almacenamiento</option>
+                <option value="">RAM</option>
+                <option value="">Gabinetes</option>
+                <option value="">Fuentes</option>
+                <option value="">Pantallas</option>
+                <option value="">Otros</option>
             </select>
             </div>
                 
@@ -42,8 +36,8 @@
                 
     
             <div class="formfield">
-                <label for="textarea">Descripción:</label>
-                <textarea id="textarea" col="30" rows="10"></textarea>
+            <label for="textarea">Descripción:</label>
+            <textarea id="textarea" col="30" rows="10"></textarea>
             </div>
                 
             <div>
@@ -55,21 +49,17 @@
             <label for="Envio">Envio:</label>
             <input type="radio" name="Envio" value="si">si
             <input type="radio" name="Envio" value="no">no
-            </div>
-                
+            </div> 
     
             <div>
             Agregar fotos
             <img src="" alt="">
             </div>
-            
-    
             <button type="submit">Agregar</button>
-            </form>
-        
+        </form>
         </div>
     </div>    
-</div>
+</section>
 </main>
 <%- include('partials/footer') %>
 </body>

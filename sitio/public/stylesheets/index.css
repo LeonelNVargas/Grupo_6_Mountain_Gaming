@@ -70,10 +70,18 @@ i.fas.fa-user {
     color: orange;
     font-size: 10px;
     margin-left: 5px;
+    text-decoration: none;
+}
+#ingresoyregistro:hover{
+    color:red;
 }
 
 #carrito{
     list-style: none;
+}
+
+#cajacarrito i:hover{
+    color: red;
 }
 
 #cajacarrito{

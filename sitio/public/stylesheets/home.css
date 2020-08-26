@@ -33,3 +33,24 @@
     text-decoration: none;
     color: var(--color-azul);
 }
+
+@media (min-width: 768px){
+    #imagecarousel1{
+        position: relative;
+        left: 3%;
+    }
+}
+
+@media (min-width: 992px){
+    #imagecarousel1{
+        position: relative;
+        left: 14%;
+    }
+}
+
+@media (min-width: 1440px){
+    #imagecarousel1{
+        position: relative;
+        left: 20%;
+    }
+}
