@@ -7,3 +7,14 @@ La comunicacion juega un rol importatente cuando se trabaja con mas personas, pa
 Debido a un problema surgido con uno de nuestros integrantes y su abandono, tuvimos que resolver la primera etapa del sprint entre 2 personas, si bien esto no presento un gran  
 inconveniente, el hecho que uno de los comprometidos con el proyecto se retirara, altero la planificacion y la asignacion de tareas.  
 Ya con la primera etapa del sprint terminada ,la segundo etapa sera mucho mas fluida ya que la asignacion de tareas y el apoyo entre miembros del equipo se ha establecido.
+
+## Etapa 2  
+
+El resumen de la segunda etapa:  
+El trabajo en equipo mejora en referencia a ka primera etapa, las tareas fueron asignadas equitativamente y en consecuencia de la disponibilidad y habilidad de cada integrante  
+por ende no se presentaron conflictos.  
+
+## Etapa 3  
+
+El resumen de la tercera etapa:  
+Las tareas designadas durante esta etapa, presentaron una dificultad para uno de los integrantes, por ende esto genero un retraso en la realizacion y entraga de las tareas, tambien hay que tomar nota de que la comunicion decayo en perspectiva a la anterior etapa.
