@@ -1,0 +1,13 @@
+[{
+    "id" : 1,
+    "nombre": "Lautaro",
+    "email": "emailmountaingaming@web.com",
+    "contraseña": "1234"
+},
+{
+    "id": 2,
+    "nombre": "Leonel",
+    "email":"emailmountaingaming02@web.com",
+    "contraseña":"4321"
+}
+]

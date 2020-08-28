@@ -7,5 +7,8 @@ module.exports = {
     },
     productos: function(req, res){
         res.render('productos')
+    },
+    publicar: function(req,res){
+        res.redirect('productos')
     }
 }

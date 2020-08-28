@@ -9,15 +9,15 @@
 <section class="container">
     <div class="row">
         <div class="col-12">    
-        <form action="POST">
+        <form method="POST" action="/data/productos.json" >
             <div>
             <label for="">Nombre:</label>
-            <input type="text">
+            <input type="text" name="name">
             </div>
 
             <div>
             <label for="">Categoria:</label>
-            <select name="" id="">
+            <select name="category" id="">
                 <option value="">Procesadores</option>
                 <option value="">Motherboards</option>
                 <option value="">Almacenamiento</option>
@@ -31,18 +31,18 @@
                 
             <div>
             <label for="">Precio:</label>
-            <input type="number">
+            <input type="number" name= "price">
             </div>
                 
     
             <div class="formfield">
             <label for="textarea">Descripción:</label>
-            <textarea id="textarea" col="30" rows="10"></textarea>
+            <textarea id="textarea" col="30" rows="10" name="description"></textarea>
             </div>
                 
             <div>
             <label for="">Cantidad:</label>
-            <input type="number" name="" id="">
+            <input type="number" name="amount" id="">
             </div>
                 
             <div>
@@ -53,7 +53,7 @@
     
             <div>
             Agregar fotos
-            <img src="" alt="">
+            <img src="" alt="" name="image">
             </div>
             <button type="submit">Agregar</button>
         </form>
