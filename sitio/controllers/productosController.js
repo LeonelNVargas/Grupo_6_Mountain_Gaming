@@ -20,6 +20,6 @@ module.exports = {
         res.render('registroProducto')
     },
     publicar: function(req,res){
-        res.redirect('productos')
+        res.send('Producto subido')
     }
 }
