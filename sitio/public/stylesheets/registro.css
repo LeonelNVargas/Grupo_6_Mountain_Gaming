@@ -82,6 +82,11 @@ main div{
 }
 
 @media (min-width: 1440px){
+    .inputUno{
+        position: relative;
+        left: 95px;
+    }
+    
     .inputDos{
         position: relative;
         left: 104px;

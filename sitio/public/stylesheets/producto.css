@@ -5,3 +5,7 @@
 .container .row section#producto{
     display: flex
 }
+
+#productostitulo{
+    text-align: center;
+}

@@ -5,28 +5,29 @@
 <%- include('partials/header') %>
 
 <div class="container">
-<section style="margin-top: 10px;">
-    <div class="row">
-        <div class="col-sm-12 col-md-6">
-            <img src="/images/pcmuestra.png" alt="imagen" class="img-fluid" id="imagenmuestra">
+    <section style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="/images/<%- producto.image %>" alt="imagen" class="img-fluid" id="imagenmuestra">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                    <h2><%- producto.name %></h2>
+                    <h6>Precio: <span style="color: rgb(0, 255, 21)">$<%- producto.price %></span></h6>
+                    <p style="font-weight: bolder;">Metodos de pago y envio:</p>
+            </div>
         </div>
-        <div class="col-sm-12 col-md-6">
-                <h2>Producto</h2>
-                <h4>Precio</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-    </div>
-      
+          
     <div class="row">
-    <div class="col-sm-6 col-md-6">
-    <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quisquam!</h5>
-    </div>
+        <div class="col-sm-6 col-md-6">
+        <h5>Descripción:</h5>
+        <h6><%- producto.description %></h6>
+        </div>
 
-    <div class="col-sm-6 col-md-6">
+        <div class="col-sm-6 col-md-6">
             <form method="" action="" name="">
                 <button type="button" name="" value="">Agregar al carrito</button>
             </form>
-    </div>
+        </div>
     </div>
 </section> 
 

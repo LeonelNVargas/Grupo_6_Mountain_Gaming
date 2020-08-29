@@ -24,9 +24,17 @@
      </nav>
     </div>
     <div class="col-12 col-md-6">
-      <div id="todosproductos">
-        <h5> crear </h5>
-      </div>
+      <h3 id="productostitulo">Productos</h3>
+      <section id="todoslosproductos">
+        <% productos.forEach(producto => { %>
+        <div>
+        <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange;"><%- producto.name %></h4>
+        <img src="/images/<%- producto.image %>">
+        </a>
+        <h6 style="font-weight: bolder;">Precio:</h6><h6 style="color: rgb(0, 255, 0);">$<%- producto.price %></h6>
+        </div>
+        <% }) %>
+      </section>
     </div>
     
 </div>    
