@@ -11,7 +11,7 @@ module.exports = {
         }
         res.render('registroExito');
     },
-    ingreso: function(req, res){
-        res.redirect('/')
+    perfil: function(req, res){
+        res.send('Acá no hay nada')
     }
 }

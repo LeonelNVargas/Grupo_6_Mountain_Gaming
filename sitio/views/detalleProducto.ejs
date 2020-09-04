@@ -2,32 +2,32 @@
 <html lang="en">
 <%- include('partials/head') %>
 <body>
-<%- include('partials/header') %>
+    <%- include('partials/header') %>
 
 <div class="container">
-    <section style="margin-top: 10px;">
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <img src="/images/<%- producto.image %>" alt="imagen" class="img-fluid" id="imagenmuestra">
-            </div>
-            <div class="col-sm-12 col-md-6">
-                    <h2><%- producto.name %></h2>
-                    <h6>Precio: <span style="color: rgb(0, 255, 21)">$<%- producto.price %></span></h6>
-                    <p style="font-weight: bolder;">Metodos de pago y envio:</p>
-            </div>
-        </div>
-          
+<section style="margin-top: 10px;">
     <div class="row">
-        <div class="col-sm-6 col-md-6">
-        <h5>Descripción:</h5>
-        <h6><%- producto.description %></h6>
+        <div class="col-12 col-md-6">
+            <img src="/images/<%- producto.image %>" alt="imagen" class="img-fluid" id="imagenmuestra">
         </div>
+        <div class="col-sm-12 col-md-6">
+                <h2><%- producto.name %></h2>
+                <h6>Precio: <span style="color: rgb(0, 255, 21)">$<%- producto.price %></span></h6>
+                <p style="font-weight: bolder;">Metodos de pago y envio:</p>
+        </div>
+    </div>
+      
+    <div class="row">
+    <div class="col-sm-6 col-md-6">
+    <h5>Descripción:</h5>
+    <h6><%- producto.description %></h6>
+    </div>
 
-        <div class="col-sm-6 col-md-6">
-            <form method="" action="" name="">
+    <div class="col-sm-6 col-md-6">
+            <form action="" name="" method="">
                 <button type="button" name="" value="">Agregar al carrito</button>
             </form>
-        </div>
+    </div>
     </div>
 </section> 
 
@@ -38,7 +38,7 @@
     </div>
     <div class="col-12 col-md-10">
         <div>
-           <!--Crear productos relacionados--> 
+           <!--Crear productos relacionados-->
         </div>
     </div>
 </div>
