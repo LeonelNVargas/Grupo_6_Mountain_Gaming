@@ -10,16 +10,25 @@
             <h4>Productos subidos</h4>
         </div>
         
-        <div class="col-12 text-center">
+        <div class="col-12 col-6 text-center">
             <section>
             <h5>Nombre:</h5>
             <img src="/images/noimage.png" class="img-fluid">
             <h6>Precio:</h6>
             <p style="color: white;">Descripción:</p>
-            <div>
-                <form action="" method="POST">
+            <div class="nav justify-content-center">
+                <div>
+                <!---Agregar ruta en el action para el formulario de edición(GET)-->
+                <form action="" method="GET">
                 <button type="submit">Editar</button>
                 </form>
+                </div>
+                <div>
+                 <!---Agregar ruta para eliminar el producto(DELETE)-->
+                <form action="" method="POST">
+                    <button type="reset">Eliminar</button>
+                </form>
+                </div>
             </div>
             </section>
         </div>

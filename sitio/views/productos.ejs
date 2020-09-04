@@ -6,11 +6,13 @@
 
 <!--categorias-->
 <div class="row container">
-    <div class="col-12 col-md-6">
+ 
+    <div class="col-12 col-md-6 col-lg-4">
       <nav id="botoncategorias" class="navbar-expand-md">
+       <h6 id="categorias">Categorias</h6>
        <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="menu navbar-nav mr-auto"><h6>Categorias:</h6>
+       <ul class="menu navbar-nav mr-auto">
          <li><a href="">Procesadores</a></li>
          <li><a href="">Motherboards</a></li>
          <li><a href="">Almacenamiento</a></li>
@@ -25,12 +27,12 @@
     </div>
 
     <!---todos los productos-->
-    <div class="col-12 col-md-6">
+    <div class="col-12 col-md-6 col-lg-8">
       <h3 id="productostitulo">Productos</h3>
-      <section id="todoslosproductos">
+      <section class="text-center">
         <% productos.forEach(producto => { %>
-        <div>
-        <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange;"><%- producto.name %></h4>
+        <div class="cajadeproducto">
+        <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange; font-size: small;"><%- producto.name %></h4>
         <img src="/images/<%- producto.image %>">
         </a>
         <h6 style="font-weight: bolder;">Precio:</h6><h6 style="color: rgb(0, 255, 0);">$<%- producto.price %></h6>

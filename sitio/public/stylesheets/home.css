@@ -19,12 +19,15 @@
     margin-top: 5px;
 }
 
+#botoncategorias ul{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
 #botoncategorias ul li{
     background-color: skyblue;
     text-align: center;
     font-weight: bold;
-    border: 1px solid white;
-    border-radius: 10px;
     margin: 5px;
     padding: 5px;
 }
@@ -34,10 +37,22 @@
     color: var(--color-azul);
 }
 
+#botoncategorias ul li a:hover{
+    color: red;
+}
+
+#botoncategorias ul li:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.664));
+}
+
 @media (min-width: 768px){
     #imagecarousel1{
         position: relative;
         left: 3%;
+    }
+
+    section .cajadeproducto{
+        display: inline-block;
     }
 }
 
