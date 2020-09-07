@@ -9,15 +9,15 @@
 <section class="container">
     <div class="row">
         <div class="col-12">    
-        <form action="/producto/agregar" method="POST">
+        <form action="" method="POST" enctype="multipart/form-data">
             <div>
             <label for="">Nombre:</label>
-            <input type="text">
+            <input type="text" name="nombre">
             </div>
 
             <div>
             <label for="">Categoria:</label>
-            <select name="" id="">
+            <select name="categoria">
                 <option value="">Procesadores</option>
                 <option value="">Motherboards</option>
                 <option value="">Almacenamiento</option>
@@ -31,31 +31,27 @@
                 
             <div>
             <label for="">Precio:</label>
-            <input type="number">
+            <input type="number" name="precio">
             </div>
                 
     
             <div class="formfield">
             <label for="textarea">Descripción:</label>
-            <textarea id="textarea" col="30" rows="10"></textarea>
+            <textarea id="textarea" col="30" rows="10" name="descripcion"></textarea>
             </div>
                 
             <div>
             <label for="">Cantidad:</label>
-            <input type="number" name="amount" id="">
+            <input type="number" name="cantidad">
             </div>
                 
-            <div>
-            <label for="Envio">Envio:</label>
-            <input type="radio" name="envio" value="si">si
-            <input type="radio" name="envio" value="no">no
-            </div> 
-    
-            <div>
-            Agregar fotos
-            <img src="" alt="">
+            <div class="col-12">
+                <label for="">Agregar Fotos</label>
+                <input type="file" class="col-sm-12 col-md-4" name="image">
             </div>
+    
             <button type="submit">Agregar</button>
+            <button type="reset">Resetear</button>
         </form>
         </div>
     </div>    
