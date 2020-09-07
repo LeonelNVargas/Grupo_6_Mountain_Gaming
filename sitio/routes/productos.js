@@ -20,6 +20,7 @@ router.get('/detalle/:id', productos.detalle)
 router.get('/agregar', productos.agregar)
 router.post('/agregar', upload.any(), productos.publicar)
 
+router.get('/misproductos', productos.misproductos)
 router.get('/editar', productos.editar)
 //router.get('/:id/editar', productos.editar)
 //router.put('/:id')
