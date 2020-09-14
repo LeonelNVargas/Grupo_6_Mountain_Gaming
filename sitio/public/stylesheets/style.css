@@ -1,6 +1,6 @@
 @import "index.css";
-@import "carrito.css";
-@import "producto.css";
+@import "body.css";
+@import "allproducts.css";
 @import "registro.css";
 @import "registroProduct.css";
-@import "home.css";
+@import "carrito.css";
