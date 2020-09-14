@@ -1,0 +1,105 @@
+/*cuerpo*/
+#mensajes h5{
+    color: rgb(0, 153, 153);
+    font-weight: bolder;
+}
+#mensajes p{
+    color:  rgb(0, 153, 153);
+    font-weight: bolder;
+}
+
+#botoncategorias button{
+    position: relative;
+    left: 45%;
+    background-color: orange;
+    margin-bottom: 5px;
+}
+
+#botoncategorias{
+    margin-top: 5px;
+}
+
+#botoncategorias ul{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+#botoncategorias ul li{
+    background-color: skyblue;
+    text-align: center;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px;
+}
+
+#botoncategorias ul li a{
+    text-decoration: none;
+    color: var(--color-azul);
+}
+
+#botoncategorias ul li a:hover{
+    color: red;
+}
+
+#botoncategorias ul li:hover{
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.664));
+}
+
+.container{
+    overflow: hidden;
+}
+
+.container .row section#producto{
+    display: flex
+}
+
+#productostitulo{
+    text-align: center;
+}
+
+section .ofertas{
+    text-align: center;
+}
+
+section #cajaproducto{
+    text-decoration: none;
+}
+
+section #cajaproducto h5{
+    color: orange;
+}
+
+section #cajaproducto h5:hover{
+    color: orangered;
+}
+
+@media (min-width: 768px){
+    #imagecarousel1{
+        position: relative;
+        left: 3%;
+    }
+
+    section .cajadeproducto{
+        display: inline-block;
+    }
+}
+
+    section .ofertas{
+    display: inline-flex;
+    position: relative;
+    left: 5%;
+}
+
+@media (min-width: 992px){
+    #imagecarousel1{
+        position: relative;
+        left: 14%;
+    }
+}
+
+@media (min-width: 1440px){
+    #imagecarousel1{
+        position: relative;
+        left: 20%;
+    }
+}

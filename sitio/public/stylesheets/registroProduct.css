@@ -16,3 +16,79 @@ button{
     vertical-align: middle;
     resize: none;
 }
+
+#camposInput input{
+    font-size: small;
+}
+
+@media(min-width: 768px){
+    #cajanombre input{
+        position: relative;
+        left: 5%;
+    }
+    #cajacategoria select{
+        position: relative;
+        left: 4%;
+    }
+
+    #cajaprecio input{
+        position: relative;
+        left: 7%;
+    }
+
+    #cajadescuento input{
+        position: relative;
+        left: 2%;
+    }
+
+    #cajadescripcion textarea{
+        position: relative;
+        left: 1%;
+    }
+
+    #cajacantidad input{
+        position: relative;
+        left: 5%;
+    }
+}
+
+@media(min-width: 1024px){
+    #cajaprecio input{
+        position: relative;
+        left: 5%;
+    }
+
+    #cajadescripcion textarea{
+        position: relative;
+        left: 2%;
+    }
+}
+
+@media(min-width: 1440px){
+    #cajanombre input{
+        position: relative;
+        left: 47px;
+    }
+    #cajacategoria select{
+        position: relative;
+        left: 3%;
+    }
+    #cajaprecio input{
+        position: relative;
+        left: 62px;
+    }
+
+    #cajadescuento input{
+        position: relative;
+        left: 45px;
+    }
+
+    #cajadescripcion textarea{
+        position: relative;
+        left: 5%;
+    }
+    #cajafotos input{
+        position: relative;
+        left: 9%;
+    }
+}

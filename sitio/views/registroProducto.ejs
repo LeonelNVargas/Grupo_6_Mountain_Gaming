@@ -8,14 +8,14 @@
 <h2 class="justify-content-center">¡Agrega un producto!</h2>
 <section class="container">
     <div class="row">
-        <div class="col-12">    
+        <div class="col-12" id="camposInput">    
         <form action="" method="POST" enctype="multipart/form-data">
-            <div>
+            <div id="cajanombre">
             <label for="">Nombre:</label>
             <input type="text" name="nombre">
             </div>
 
-            <div>
+            <div id="cajacategoria">
             <label for="">Categoria:</label>
             <select name="categoria">
                 <option value="">Procesadores</option>
@@ -29,23 +29,27 @@
             </select>
             </div>
                 
-            <div>
+            <div id="cajaprecio">
             <label for="">Precio:</label>
             <input type="number" name="precio">
             </div>
-                
+            
+            <div id="cajadescuento">
+                <label for="">Descuento:</label>
+                <input type="number" name="descuento">
+            </div>
     
-            <div class="formfield">
+            <div class="formfield" id="cajadescripcion">
             <label for="textarea">Descripción:</label>
             <textarea id="textarea" col="30" rows="10" name="descripcion"></textarea>
             </div>
                 
-            <div>
+            <div id="cajacantidad">
             <label for="">Cantidad:</label>
             <input type="number" name="cantidad">
             </div>
                 
-            <div class="col-12">
+            <div class="col-12" id="cajafotos">
                 <label for="">Agregar Fotos</label>
                 <input type="file" class="col-sm-12 col-md-4" name="image">
             </div>

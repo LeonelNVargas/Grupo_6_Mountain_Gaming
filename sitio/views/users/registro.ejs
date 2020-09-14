@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<body>
+<%- include('../partials/header') %>
+
+<main>
+
+    <!--Registrate-->
+    <div class="row justify-content-center">
+        <h2 class="col-12">Registrate</h2>
+        
+        <section class="container">
+            <h3>Completa tus datos</h3>
+
+            <form action="/user/registro" method="POST">
+                    <div class="col-12">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" class="inputUno">
+                    </div>
+
+                    <div class="col-12">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="inputDos">
+                    </div>
+                
+                    <div class="col-12">
+                    <label for="contrasenia">Contraseña:</label>
+                    <input type="password" name="contrasenia" class="inputTres">
+                    </div>
+                
+                    <div class="">
+                    <label for="confirmarcontrasenia">Confirmar contraseña:</label>
+                    <input type="password" name="confirmarcontrasenia" class="inputCuatro">
+                    </div>
+                    <div class="container">
+                    <h5>Terminos y condiciones</h5>
+                    <textarea name="terminosycondiciones" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero repellendus dolores ea, doloremque eaque illum, nesciunt quibusdam magni sapiente necessitatibus. Deleniti est omnis totam officiis explicabo beatae, exercitationem quas?</textarea>
+                    </div>
+                    <div>
+                    <button type="submit" value="Enviar" class="btnenviar">Enviar</button>
+                    <button type="reset" value="Reiniciar" class="btnreiniciar">Reiniciar</button>
+                    </div>
+            </form>
+        </section>
+        
+    </div>
+    <!--fin del registrate-->
+
+
+    <!--Ya tenes cuenta?-->
+    <h3>¿Ya tenés una cuenta?</h3>
+    <section class="container">
+        <div class="col-12">
+            <h3>Ingresa:</h3>
+            <form>
+            <div>
+            <label>Usuario:</label>
+            <input type="text" class="inputCinco">
+            </div>
+            <div>
+            <label>Contraseña:</label>
+            <input type="password" class="inputSeis">
+            </div>
+            <button type="submit" value="Ingresar" class="btningresar">Ingresar</button>
+            </form>
+        </div>
+    </section>
+    <!--Fin del ya tenes cuenta?-->
+</main>
+
+
+<%- include('../partials/footer') %>
+</body>
+</html> 

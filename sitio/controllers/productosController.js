@@ -31,12 +31,12 @@ module.exports = {
         let nuevoProducto = {
             id: ultimoProducto + 1,
             name: req.body.nombre,
-            price: Number(req.body.precio),
-            amount: Number(req.body.cantidad),
+            price: req.body.precio,
+            amount: req.body.cantidad,
             category: req.body.categoria,
-            discount: Number(req.body.descuento),
+            discount: req.body.descuento,
             description: req.body.descripcion,
-            image: (req.files[0])?req.files[0].filename:"noimage.png"
+            image: [(req.files[0])?req.files[0].filename:"noimage.png"]
         }
         database.push(nuevoProducto);
         fs.writeFileSync(path.join(__dirname,"..","data","productos.json"),JSON.stringify(database), 'utf-8')

@@ -1,13 +1,1 @@
-[{
-    "id" : 1,
-    "nombre": "Lautaro",
-    "email": "emailmountaingaming@web.com",
-    "contraseña": "1234"
-},
-{
-    "id": 2,
-    "nombre": "Leonel",
-    "email":"emailmountaingaming02@web.com",
-    "contraseña":"4321"
-}
-]
+[{"id":1,"nombre":"Lautaro","email":"emailmountaingaming@web.com","contrasenia":"1234","rol":"admin"},{"id":2,"nombre":"Leonel","email":"emailmountaingaming02@web.com","contrasenia":"4321","rol":"admin"}]
