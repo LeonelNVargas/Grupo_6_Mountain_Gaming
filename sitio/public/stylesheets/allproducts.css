@@ -1,7 +1,3 @@
-.container{
-    overflow: hidden;
-}
-
 .container .row section#producto{
     display: flex
 }
