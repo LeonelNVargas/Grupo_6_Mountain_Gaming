@@ -4,34 +4,34 @@
     <body>
     <%- include('partials/header') %>
 
-<div class="container">
+<div class="container" style="background-color:rgba(136, 216, 240, 0.507); margin-top: 10px; margin-bottom: 10px;">
     <div class="row">    
         <div class="col-12">
-            <h4>Productos subidos</h4>
+            <h4 class="nav justify-content-center" style="border-bottom: 1px solid white; margin-bottom: 15px;">Productos subidos</h4>
         </div>
-        
-        <div class="col-12 col-6 text-center">
-            <section>
-            <h5>Nombre:</h5>
-            <img src="/images/noimage.png" class="img-fluid">
-            <h6>Precio:</h6>
-            <p style="color: white;">Descripción:</p>
-            <div class="nav justify-content-center">
-                <div>
-                <!---Agregar ruta en el action para el formulario de edición(GET)-->
-                <form action="" method="GET">
-                <button type="submit">Editar</button>
-                </form>
+        <% productos.forEach(producto => { %>
+            <div class="col-12 text-center">
+                <h5 style="color: orange;"><%= producto.name %></h5>
+                <img src="/images/products/<%= producto.image %>" class="img-fluid">
+                <h6 style="color: rgb(0, 255, 0);">$<%= producto.price %></h6>
+                <p style="color: white;"><%= producto.description %></p>
+                <div class="nav justify-content-center">
+                    <div>
+                    <!---Agregar ruta en el action para el formulario de edición(GET)-->
+                    <form action="/producto/<%= producto.id %>/editar" method="GET">
+                    <button type="submit">Editar</button>
+                    </form>
+                    </div>
+                    <div>
+                     <!---Agregar ruta para eliminar el producto(DELETE)-->
+                    <form action="/producto/<%= producto.id %>/eliminar?_method=DELETE" method="POST">
+                        <button type="submit">Eliminar</button>
+                    </form>
+                    </div>
                 </div>
-                <div>
-                 <!---Agregar ruta para eliminar el producto(DELETE)-->
-                <form action="" method="POST">
-                    <button type="reset">Eliminar</button>
-                </form>
-                </div>
+                
             </div>
-            </section>
-        </div>
+        <% }) %>
     </div>
 </div>
 

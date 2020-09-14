@@ -8,22 +8,22 @@
         <div class="row">
             <div class="col-12 text-center">
                 <!---formulario de edicion, viaja por PUT-->
-                <form action="" method="POST">
+                <form action="/producto/editar/<%= producto.id %>?_method=PUT" method="POST">
                 <div>
                     <label for="">Editar nombre:</label>
-                    <input type="text" name="nombre">
+                    <input type="text" name="nombre" value=<%= producto.name %>>
                 </div>
                 <div>
                     <label for="">Editar precio:</label>
-                    <input type="number" name="precio">
+                    <input type="number" name="precio" value="<%= producto.price %>">
                 </div>
                 <div>
                     <label for="">Editar descuento:</label>
-                    <input type="number" name="descuento">
+                    <input type="number" name="descuento" value="<%= producto.discount %>">
                 </div>
                 <div>
                     <label for="">Editar stock:</label>
-                    <input type="number" name="cantidad">
+                    <input type="number" name="cantidad" value="<%= producto.amount %>">
                 </div>
                 <div>
                     <label for="">Editar categoria:</label>
@@ -31,14 +31,14 @@
                 </div>
                 <div>
                     <label for="">Editar descripción:</label>
-                    <textarea name="descripcion"></textarea>
+                    <textarea name="descripcion"><%= producto.description %></textarea>
                 </div>
                 <div>
                     <label for="">Cambiar/subir foto:</label>
                     <input type="image" name="image">
                 </div>
                 <div>
-                    <button type="submit">Confirmar cambios</button>
+                    <button type="submit" value="<%= producto.id %>">Confirmar cambios</button>
                 </div>
                 </form>
             </div>

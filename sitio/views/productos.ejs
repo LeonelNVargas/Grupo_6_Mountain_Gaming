@@ -28,12 +28,12 @@
 
     <!---todos los productos-->
     <div class="col-12 col-md-6 col-lg-8">
-      <h3>Productos</h3>
+      <h3 style="padding-top: 5px;">Productos</h3>
       <section class="text-center">
         <% productos.forEach(producto => { %>
         <div class="cajadeproducto">
         <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange; font-size: small;"><%- producto.name %></h4>
-        <img src="/images/<%- producto.image %>">
+        <img src="/images/products/<%- producto.image %>" class="img-fluid">
         </a>
         <h6 style="font-weight: bolder;">Precio:</h6><h6 style="color: rgb(0, 255, 0);">$<%- producto.price %></h6>
         </div>

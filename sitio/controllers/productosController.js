@@ -43,30 +43,45 @@ module.exports = {
         res.redirect('/producto/all')
     },
     misproductos: function(req, res){
-        let idProducto = req.params.id;
-        let productos = database.filter(producto =>{
-            return producto.id == idProducto
-        })
+       let productos = database
         res.render('misproductos', {
-            producto: productos
+            productos: productos
         })
     },
     editar: function(req, res){
         let idProducto = req.params.id;
         database.forEach(producto => {
             if (producto.id == idProducto){
-                producto.id = Number(req.body.id);
+                producto.id = Number(idProducto);
                 producto.name = req.body.nombre;
                 producto.price = Number(req.body.precio);
                 producto.discount = Number(req.body.descuento);
                 producto.category = req.body.categoria;
                 producto.description = req.body.descripcion;
-                producto.image = (req.files[0]) ? req.files[0].filename : producto.image
+                producto.image = producto.image
             }
         })
         fs.writeFileSync(path.join(__dirname,"../data/productos.json"), JSON.stringify(database))
-        res.render('editarProducto', {
-            producto: idProducto
+        res.redirect('/producto/misproductos')
+    },
+    edit: function(req, res){
+        let editProduct = req.params.id;
+        let producto = database.filter(producto => {
+            return producto.id == editProduct
         })
+        res.render('editarProducto', {
+            producto: producto[0]
+        })
+    },
+    delete: function(req, res){
+        let productDelete = req.params.id;
+        database.forEach(producto => {
+            if(producto.id == productDelete){
+                let productoBorrado = database.indexOf(producto)
+                database.splice(productoBorrado,1)
+            }
+        });
+        fs.writeFileSync(path.join(__dirname, '../data/productos.json'), JSON.stringify(database))
+        res.redirect('/producto/misproductos')
     }
 }

@@ -30,6 +30,10 @@ module.exports = {
             })
         }
     },
+    login: function(req, res){
+
+        
+    },
     perfil: function(req, res){
         res.send('Acá no hay nada')
     }
