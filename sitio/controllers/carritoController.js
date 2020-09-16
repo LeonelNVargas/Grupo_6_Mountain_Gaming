@@ -1,5 +1,8 @@
 module.exports = {
     carrito: function(req, res){
-        res.render('carrito')
+        res.render('carrito', {
+            title: "Mi Carrito",
+            css: "carrito.css"
+        })
     }
 }

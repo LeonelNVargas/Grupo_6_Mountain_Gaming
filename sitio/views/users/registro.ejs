@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('../partials/head') %>
-<body>
+<link rel="stylesheet" href="/stylesheets/<%= css %>">
 <%- include('../partials/header') %>
-
+<body>
 <main>
 
     <!--Registrate-->
@@ -13,60 +13,42 @@
         <section class="container">
             <h3>Completa tus datos</h3>
 
-            <form action="/user/registro" method="POST">
+            <form action="" method="POST">
                     <div class="col-12">
                     <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" class="inputUno">
+                    <input type="text" name="nombre" class="inputUno" <%= (typeof old != 'undefined' && old.nombre)? "es-valido": (typeof errors != 'undefined' && errors.nombre)?"es-invalido": ""%> value="<%= (typeof old != 'undefined' && old.nombre)?old.nombre:'' %>">
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.nombre)?errors.nombre.msg: "" %> </small>
+                    </div>
+                    
+                    <div class="col-12">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="inputDos" value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>">
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %> </small>
                     </div>
 
                     <div class="col-12">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" class="inputDos">
-                    </div>
-                
-                    <div class="col-12">
                     <label for="contrasenia">Contraseña:</label>
                     <input type="password" name="contrasenia" class="inputTres">
-                    </div>
-                
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.contrasenia)?errors.contrasenia.msg: "" %> </small>
+                     </div>
+
                     <div class="">
                     <label for="confirmarcontrasenia">Confirmar contraseña:</label>
-                    <input type="password" name="confirmarcontrasenia" class="inputCuatro">
+                    <input type="password" name="contraseniaDos" class="inputCuatro" <%= (typeof error != 'undefined' && errors.contrasenia)?"is-invalid": ""%>>
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.contraseniaDos)?errors.contraseniaDos.msg: "" %> </small>
                     </div>
+
                     <div class="container">
                     <h5>Terminos y condiciones</h5>
                     <textarea name="terminosycondiciones" id="" cols="30" rows="10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem libero repellendus dolores ea, doloremque eaque illum, nesciunt quibusdam magni sapiente necessitatibus. Deleniti est omnis totam officiis explicabo beatae, exercitationem quas?</textarea>
                     </div>
                     <div>
-                    <button type="submit" value="Enviar" class="btnenviar">Enviar</button>
-                    <button type="reset" value="Reiniciar" class="btnreiniciar">Reiniciar</button>
+                    <button type="submit" value="" class="btnenviar">Enviar</button>
+                    <button type="reset" value="" class="btnreiniciar">Reiniciar</button>
                     </div>
             </form>
         </section>
-        
     </div>
-    <!--fin del registrate-->
-
-
-    <!--Ya tenes cuenta?-->
-    <h3>¿Ya tenés una cuenta?</h3>
-    <section class="container">
-        <div class="col-12">
-            <h3>Ingresa:</h3>
-            <form>
-            <div>
-            <label>Usuario:</label>
-            <input type="text" class="inputCinco">
-            </div>
-            <div>
-            <label>Contraseña:</label>
-            <input type="password" class="inputSeis">
-            </div>
-            <button type="submit" value="Ingresar" class="btningresar">Ingresar</button>
-            </form>
-        </div>
-    </section>
-    <!--Fin del ya tenes cuenta?-->
 </main>
 
 

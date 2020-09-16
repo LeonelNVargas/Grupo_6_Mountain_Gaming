@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/stylesheets/<%= css %>">
+    <%- include('../partials/header') %>
+<body>
+<main class="loginpag">
+    <div class="container cuerpo">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3>¡Ingresa a tu cuenta!</h3>
+            </div>
+            <div class="col-12 text-center">
+                <form action="" method="POST">
+                    <div class="col-12">
+                    <label>Email:</label>
+                    <input type="text" class="inputCinco" value="<%= (typeof old != 'undefined' && old.email)?old.email:'' %>" placeholder="email" name="email">
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %> </small>
+                    </div>
+        
+                    <div class="col-12">
+                    <label>Contraseña:</label>
+                    <input type="password" class="inputSeis" name="contrasenia">
+                    <small class="text-danger" style="display: grid;"><%= (typeof errors != 'undefined' && errors.contrasenia)?errors.contrasenia.msg: "" %> </small>
+                    <button type="submit" class="btningresar">Ingresar</button>
+                    </div>
+                    <a href="/user/register" id="registrarse">¿No tenés cuenta aún? ¡Registrate!</a>
+                    </form>
+            </div>
+        </div>
+    </div>
+</main>    
+    <%- include('../partials/footer') %>
+</body>
+</html>

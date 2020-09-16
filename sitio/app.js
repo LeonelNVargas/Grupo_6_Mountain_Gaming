@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 //importo rutas
 var indexRouter = require('./routes/index');
@@ -23,7 +24,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(methodOverride("_method"))
+
+app.use(methodOverride("_method"));
+app.use(session({secret: "mountainGaming"}));
 
 //Utilizo rutas
 app.use('/', indexRouter);

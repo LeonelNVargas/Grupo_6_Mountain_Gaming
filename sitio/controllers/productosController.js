@@ -5,6 +5,7 @@ const path = require('path')
 module.exports = {
     todoslosproductos: function(req, res){
     res.render('productos', {
+        title: "Nuestros productos",
         productos: database
         });
     },
@@ -14,12 +15,16 @@ module.exports = {
             return producto.id == idProducto
         })
         res.render('detalleProducto',{
+            title: "Detalle de producto",
             id: idProducto,
             producto: producto[0]
         });
     },
     agregar: function(req, res){
-        res.render('registroProducto')
+        res.render('registroProducto',{
+            title: "Agrega un producto",
+            css: "registroProduct.css"
+        })
     },
     publicar: function(req, res){
         let ultimoProducto = 1;
@@ -45,6 +50,7 @@ module.exports = {
     misproductos: function(req, res){
        let productos = database
         res.render('misproductos', {
+            title: "Productos subidos",
             productos: productos
         })
     },
@@ -70,6 +76,7 @@ module.exports = {
             return producto.id == editProduct
         })
         res.render('editarProducto', {
+            title: "Editar productos",
             producto: producto[0]
         })
     },

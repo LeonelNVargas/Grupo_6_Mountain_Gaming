@@ -1,21 +1,15 @@
-/*seccion: productos*/
-
-section{
-    background-color: rgba(96, 161, 187, 0.589);
-    margin: 2px;
-    border-radius: 5px;
-    border: 1px solid white;
+/*carrito*/
+.carritocuerpo{
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-section .producto{
+section .container{
+    height: 400px;
+}
+
+article .producto{
     display: flex;
-}
-
-form{
-    font-weight: bold;
-    text-align: center;
-    color: orange;
-    margin-left: 1px;
 }
 
 form button.eliminar{
@@ -79,9 +73,6 @@ h5#preciototal{
 
     h4.titulos{
         font-size: 30px;
-    }
-    form{
-        font-size: 15px;
     }
 
     #formasenvio{

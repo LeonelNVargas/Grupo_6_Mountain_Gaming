@@ -1,7 +1,3 @@
-.container .row section#producto{
-    display: flex
-}
-
 /*cuerpo*/
 #mensajes h5{
     color: rgb(0, 153, 153);
@@ -49,26 +45,27 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.664));
 }
 
-#productostitulo{
-    text-align: center;
-}
-
-section #cajaproducto{
-    text-decoration: none;
-}
-
-section #cajaproducto h5{
-    color: orange;
-}
-
-section #cajaproducto h5:hover{
-    color: orangered;
-}
-
-@media (min-width: 768px) {
-    section .ofertas{
-        display: inline-flex;
+@media (min-width: 768px){
+    #imagecarousel1{
         position: relative;
-        left: 5%;
+        left: 3%;
+    }
+
+    section .cajadeproducto{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px){
+    #imagecarousel1{
+        position: relative;
+        left: 14%;
+    }
+}
+
+@media (min-width: 1440px){
+    #imagecarousel1{
+        position: relative;
+        left: 20%;
     }
 }

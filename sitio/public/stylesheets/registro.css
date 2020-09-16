@@ -10,26 +10,6 @@ main div{
     margin: 5% 0%;
 }
 
-/*Registro con exito*/
-.exito {
-    margin-top: 5px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: rgba(136, 216, 240, 0.507);
-    font-size: 30px;
-    font-weight: bolder;
-    text-align: center;
-    color: rgb(0, 255, 0);
-}
-
-.inputCinco{
-    position: relative;
-    right: 26px;
-}
-.inputSeis{
-    position: relative;
-    right: 26px;
-}
 @media(min-width: 768px){
     .inputUno {
         position: relative;
@@ -51,14 +31,6 @@ main div{
         left: 3%;
     }
 
-    .inputCinco{
-        position: relative;
-        left: 40px;
-    }
-    .inputSeis{
-        position: relative;
-        left: 20px;
-    }
     .exito{
         font-size: 60px;
     }

@@ -1,1 +1,11 @@
-[{"id":1,"nombre":"Lautaro","email":"emailmountaingaming@web.com","contrasenia":"1234","rol":"admin"},{"id":2,"nombre":"Leonel","email":"emailmountaingaming02@web.com","contrasenia":"4321","rol":"admin"}]
+[
+    {
+        "id": 1,
+        "nombre": "master",
+        "email": "master@gmail.com",
+        "telefono": "Av.siempreviva",
+        "direccion": "44551000",
+        "contrasenia": "$2b$10$/e59cRv2BuERZBmLa9ZNoeS/rDqwprXsKneeUWb5kYXlGpaid3qYu",
+        "rol": "usuario"
+    }
+]

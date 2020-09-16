@@ -4,14 +4,6 @@ main{
     text-align: center;
 }
 
-button{
-    border-radius: 5px;
-    background-color: orange;
-    border: orange solid 1px;
-    font-weight: bold;
-    margin: 10px;
-}
-
 .formfield *{
     vertical-align: middle;
     resize: none;

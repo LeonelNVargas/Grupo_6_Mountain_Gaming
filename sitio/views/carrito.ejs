@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head') %>
-<body>
+<link rel="stylesheet" href="/stylesheets/<%= css %>">
 <%- include('partials/header') %>
-
+<body>
+<section class="container carritocuerpo">
 <div class="container">
     <div class="row">
     <!---seccion: productos-->
          <div class="col-sm-12 col-md-6">
             <h4 class="titulos" style="color: white;">Mis productos</h4>
-            <section id="productos">
-            <article>
+            <article id="productos">
             <div class="producto">
             <img src="/images/pcmuestra.png" alt="imagen" width="64" height="64">
             <h5 class="productoinfo">Producto 1</h5>
@@ -31,14 +31,12 @@
                 <button type="" class="eliminar">Eliminar</button>
             </form>
             </article>
-        </section>
         </div>
 
     <!---seccion: medios de pago-->
     
     <div class="col-sm-12 col-md-6">
         <h4 class="titulos">Medios de pago</h4>
-        <section>
             <article>
             <form action="">
                 <label for="medio"></label>
@@ -47,12 +45,10 @@
                 <input type="radio" name="medio" value="op3">MercadoPago
             </form>
             </article>
-    </section>
     </div>
     <!---seccion: formas de envio-->
     <div class="col-md-6" id="formasenvio">
     <h4 class="titulos">Formas de envio</h4>
-    <section>        
     <article>
         <form action="">
         <label for="formaenvio"></label>
@@ -61,7 +57,6 @@
             <input type="radio" name="formaenvio" value="andreini">Andreini
         </form>
     </article>
-    </section>
     </div>
 </div>
 </div>
@@ -79,6 +74,8 @@
         </div>
     </div>
 </div>
+
+</section>
 <%- include('partials/footer') %>
 </body>
 </html>

@@ -6,33 +6,69 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    registro: function(req, res){
-        res.render('users/registro')
+    register: function(req, res){
+        res.render('users/registro',{
+            title: "Registro",
+            css: "registro.css"
+        })
     },
-    registracion: function(req, res){
-        let error = validationResult(req);
+    createUser: function(req, res){
+        let errors = validationResult(req);
         let ultimoID = dbUsuarios.length + 1;
-        if(error.isEmpty()){
+        if(errors.isEmpty()){
             let nuevoUsuario = {
                 id: ultimoID + 1,
                 nombre: req.body.nombre,
                 email: req.body.email,
+                telefono: null,
+                direccion: null,
                 contrasenia: bcrypt.hashSync(req.body.contrasenia,10),
                 rol: "usuario"
                 };
             dbUsuarios.push(nuevoUsuario);
             fs.writeFileSync(path.join(__dirname, '..', 'data', 'usuarios.json'), JSON.stringify(dbUsuarios), 'utf-8');
-            res.redirect('/');
+            res.render('users/login',{
+                title: "Login",
+                css: "login.css",
+                usuario: req.session.usuario
+            })
         }else{
             res.render('users/registro',{
-                error: errors.mapped(),
+                title: "Registro",
+                errors: errors.mapped(),
                 old: req.body
             })
         }
     },
     login: function(req, res){
-
-        
+        res.render('users/login',{
+            title: "Ingreso",
+            css: "login.css",
+            usuario: req.session.usuario
+        })
+    },
+    processLogin: function(req, res){
+        let errors = validationResult(req);
+        if(errors.isEmpty()){
+            dbUsuarios.forEach(usuario => {
+                if(usuario.mail == req.body.email){
+                    req.session.usuario = {
+                        id: usuario.id,
+                        name: usuario.nombre,
+                        email: usuario.email
+                    }
+                }
+            });
+        res.send('Usuario logueado!')
+        }else{
+            res.render('users/login',{
+                title: "Ingreso",
+                errors: errors.mapped(),
+                css: "login.css",
+                old: req.body,
+                usuario: req.session.usuario
+            })
+        }
     },
     perfil: function(req, res){
         res.send('Acá no hay nada')

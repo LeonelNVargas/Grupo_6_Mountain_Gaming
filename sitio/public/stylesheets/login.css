@@ -1,0 +1,36 @@
+
+body .cuerpo{
+    width: 100%;
+    background-color: rgba(136, 216, 240, 0.507);
+    border-radius: 5px;
+    border: 1px solid white
+}
+
+#registrarse {
+    text-decoration: none;
+    color: orange
+}
+
+#registrarse:hover{
+    color: red;
+}
+
+.inputCinco{
+    position: relative;
+    right: 26px;
+}
+.inputSeis{
+    position: relative;
+    right: 26px;
+}
+
+@media (min-width: 768px){
+    .inputCinco{
+        position: relative;
+        left: 50px;
+    }
+    .inputSeis{
+        position: relative;
+        left: 20px;
+    }
+}

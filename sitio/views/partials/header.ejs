@@ -24,9 +24,14 @@
         </button>
       
         <ul class="dropdown-menu" role="menu">
-          <li><a href="/user/registro" id="ingresoyregistro">Ingresar / Registrarse</a></li>
-          <li><a href="/producto/agregar" id="ingresoyregistro">Subir productos</a></li>
-          <li><a href="/producto/misproductos" id="ingresoyregistro">Mis productos</a></li>
+          <% if (typeof usuario == "undefined") { %>
+          <li><a href="/user/register" id="ingresoyregistro">Registrarse</a></li>
+          <li><a href="/user/login" id="ingresoyregistro">Ingresar</a></li>
+          <% } else{ %>
+            <li><a href="/producto/agregar" id="ingresoyregistro">Subir productos</a></li>
+            <li><a href="/producto/misproductos" id="ingresoyregistro">Mis productos</a></li>
+            <p style="display: grid; font-size: xx-small;">Bienvenido, <%- usuario.name %></p>
+          <% } %>
         </ul>
         <li class="nav-item" id="carrito">
           <a class="nav-link" href="/carrito" id="cajacarrito"><i class="fas fa-cart-plus"></i></a>

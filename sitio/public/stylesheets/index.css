@@ -127,10 +127,28 @@ button{
     margin: 10px;
 }
 
+form{
+    font-weight: bold;
+    text-align: center;
+    color: orange;
+    margin-left: 1px;
+}
+
+section{
+    background-color: rgba(96, 161, 187, 0.589);
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
 /*footer*/
 
 footer{
     background-color: var(--color-celeste);
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    align-self: flex-end;
 }
 
 #contacto{
@@ -147,11 +165,15 @@ footer{
     color: red;
 }
 
+div#copyright{
+    position: relative;
+    left: 10%;
+}
+
 #copyright p{
     color: white;
     margin-top: 10px;
     opacity: 0.70;
-    text-align: center;
     font-weight: bolder;
 }
 
@@ -197,6 +219,10 @@ footer{
         flex-direction: column;
     }
 
+    form{
+        font-size: 15px;
+    }
+
     /*header: secciones*/
     .icononavegacion{
         width: 6%;
@@ -221,6 +247,11 @@ footer{
     /*footer*/
     ul.redes{
        display: grid;
+    }
+
+    div#copyright{
+        position: relative;
+        left: 25%;
     }
 }
 
@@ -263,5 +294,10 @@ footer{
     ul.redes{
         position: relative;
         top: 5%
+    }
+
+    div#copyright{
+        position: relative;
+        left: 33%;
     }
 }
