@@ -2,6 +2,12 @@
 <div class="container">
       <!---Busqueda, cuenta y carrito-->
   <div class="row">
+    <% if (usuario) { %>
+      <div class="col-12">
+        <p style="font-size: x-small; color: white">¡Bienvenido!</p>
+      </div>
+    <% } %>
+
       <div class="col-4">
         <form action="">
           <div class="input-group">
@@ -30,7 +36,7 @@
           <% } else{ %>
             <li><a href="/producto/agregar" id="ingresoyregistro">Subir productos</a></li>
             <li><a href="/producto/misproductos" id="ingresoyregistro">Mis productos</a></li>
-            <p style="display: grid; font-size: xx-small;">Bienvenido, <%- usuario.name %></p>
+            <li><a href="/user/logout" id="ingresoyregistro">Desloguear</a></li>
           <% } %>
         </ul>
         <li class="nav-item" id="carrito">

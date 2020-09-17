@@ -12,10 +12,11 @@ const registerValidator = require('../validations/registerValidator');
 //registro
 router.get('/register', controller.register);
 router.post('/register', registerValidator, controller.createUser);
-
+//ingreso
 router.get('/login', controller.login)
 router.post('/login', loginValidator, controller.processLogin);
-
+//logout
+router.get('/logout', controller.logout)
 router.get('/perfil', sessionUserCheck, controller.perfil);
 
 module.exports = router;

@@ -2,11 +2,15 @@ const database = require('../data/database');
 const fs = require('fs');
 const path = require('path')
 
+//traigo el coso de usuarios
+//const 
+
 module.exports = {
     todoslosproductos: function(req, res){
     res.render('productos', {
         title: "Nuestros productos",
-        productos: database
+        productos: database,
+        usuario: req.session.usuario
         });
     },
     detalle: function(req, res){
@@ -17,13 +21,15 @@ module.exports = {
         res.render('detalleProducto',{
             title: "Detalle de producto",
             id: idProducto,
-            producto: producto[0]
+            producto: producto[0],
+            usuario: req.session.usuario
         });
     },
     agregar: function(req, res){
         res.render('registroProducto',{
             title: "Agrega un producto",
-            css: "registroProduct.css"
+            css: "registroProduct.css",
+            usuario: req.session.usuario
         })
     },
     publicar: function(req, res){
@@ -51,7 +57,8 @@ module.exports = {
        let productos = database
         res.render('misproductos', {
             title: "Productos subidos",
-            productos: productos
+            productos: productos,
+            usuario: req.session.usuario
         })
     },
     editar: function(req, res){

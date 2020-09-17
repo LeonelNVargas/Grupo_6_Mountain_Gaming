@@ -1,11 +1,38 @@
 [
     {
         "id": 1,
+        "nombre": "Lautaro",
+        "email": "admin@gmail.com",
+        "contrasenia": "1234",
+        "telefono": "44665522",
+        "direccion": "Av.Siempreviva",
+        "rol": "usuario"
+    },
+    {
+        "id": 2,
+        "nombre": "Leonel",
+        "email": "adminDos@gmail.com",
+        "contrasenia": "4321",
+        "telefono": "10002000",
+        "direccion": "Gral.Belgrano",
+        "rol": "usuario"
+    },
+    {
+        "id": 4,
         "nombre": "master",
         "email": "master@gmail.com",
-        "telefono": "Av.siempreviva",
-        "direccion": "44551000",
+        "telefono": null,
+        "direccion": null,
         "contrasenia": "$2b$10$/e59cRv2BuERZBmLa9ZNoeS/rDqwprXsKneeUWb5kYXlGpaid3qYu",
+        "rol": "usuario"
+    },
+    {
+        "id": 5,
+        "nombre": "fulano",
+        "email": "fulano@gmail.com",
+        "telefono": null,
+        "direccion": null,
+        "contrasenia": "$2b$10$oFZc5rxAqsgevUXWTJXp3.ilc61A.bINByX.AlqG4sySfRpdGDMse",
         "rol": "usuario"
     }
 ]

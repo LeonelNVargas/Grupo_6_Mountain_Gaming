@@ -36,7 +36,9 @@ module.exports = {
             res.render('users/registro',{
                 title: "Registro",
                 errors: errors.mapped(),
-                old: req.body
+                old: req.body,
+                css: "registro.css",
+                usuario: req.session.usuario
             })
         }
     },
@@ -59,7 +61,8 @@ module.exports = {
                     }
                 }
             });
-        res.send('Usuario logueado!')
+            res.cookie('usuarioMG', req.session.usuario,{maxAge: 5000})
+        res.redirect('/')
         }else{
             res.render('users/login',{
                 title: "Ingreso",
@@ -72,5 +75,12 @@ module.exports = {
     },
     perfil: function(req, res){
         res.send('Acá no hay nada')
+    },
+    logout: function(req, res){
+        req.session.destroy();
+        if(req.cookies.usuarioMG){
+            res.cookie('usuarioMG','',{maxAge:-1})
+        }
+        return res.redirect('/')
     }
 }

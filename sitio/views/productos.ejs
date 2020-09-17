@@ -5,8 +5,8 @@
 <%- include('partials/header') %>
 
 <!--categorias-->
-<div class="row container">
- 
+<div class="container" id="allproducts">
+  <div class="row">
     <div class="col-12 col-md-6 col-lg-4">
       <nav id="botoncategorias" class="navbar-expand-md">
        <h6 id="categorias">Categorias</h6>
@@ -27,9 +27,9 @@
     </div>
 
     <!---todos los productos-->
-    <div class="col-12 col-md-6 col-lg-8">
-      <h3 style="padding-top: 5px;">Productos</h3>
-      <section class="text-center">
+      <div class="col-12 col-md-6 col-lg-8">
+      <h3 style="text-align: center;">Productos</h3>
+      <section class="text-center" id="todoslosproductossection">
         <% productos.forEach(producto => { %>
         <div class="cajadeproducto">
         <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange; font-size: small;"><%- producto.name %></h4>
@@ -39,8 +39,8 @@
         </div>
         <% }) %>
       </section>
+      </div>
     </div>
-    
 </div>    
     <%- include('partials/footer') %>
 </body>
