@@ -6,7 +6,7 @@ var logger = require('morgan');
 
 const methodOverride = require('method-override');
 const session = require('express-session');
-
+const userMiddleware = require('./middlewares/userMiddleware')
 //importo rutas
 var indexRouter = require('./routes/index');
 var userRouter = require('./routes/users');
@@ -27,6 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(methodOverride("_method"));
 app.use(session({secret: "mountainGaming"}));
+app.use(userMiddleware)
 
 //Utilizo rutas
 app.use('/', indexRouter);

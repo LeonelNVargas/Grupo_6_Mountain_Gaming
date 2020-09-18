@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %>
+<link rel="stylesheet" href="/stylesheets/<%= css %>">
+<body>
+    <%- include('../partials/header') %>
+<div class="container perfilcuerpo">
+    <div class="row datosusuario">
+        <div class="col-12 nav justify-content-center">
+            <div class="col-12 text-center">
+                <h4 id="titulomisdatos">Mis datos</h4>
+            </div>
+                <div class="col-12 text-center datos">
+                    <h5>Nombre: <span><%= usuario.name %></span></h5>
+                    <h5>Email: <span><%= usuario.email %></span></h5>
+                    <h5>Telefono:  <span><%= usuario.telefono %></span></h5>
+                    <h5>Dirección: <span><%= usuario.direccion %></span></h5>
+                </div>
+        </div>
+        <div class="col-12 nav justify-content-center">
+            <button type="submit" id="botoneditarusuario">Editar</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%- include('../partials/footer') %>
+</body>
+</html> 

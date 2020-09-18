@@ -15,8 +15,10 @@ router.post('/register', registerValidator, controller.createUser);
 //ingreso
 router.get('/login', controller.login)
 router.post('/login', loginValidator, controller.processLogin);
+//perfil
+router.get('/profile', sessionUserCheck, controller.profile);
+router.get('/editUser', sessionUserCheck, controller.editUser) //<--- Falta por hacer
 //logout
 router.get('/logout', controller.logout)
-router.get('/perfil', sessionUserCheck, controller.perfil);
 
 module.exports = router;

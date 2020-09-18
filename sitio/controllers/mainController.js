@@ -6,8 +6,7 @@ module.exports = {
     res.render('index', {
         title: 'Mountain Gaming',
         productos: database,
-        userDB: userDB,
-        usuario: req.session.usuario
+        userDB: userDB
         })
     }
 }

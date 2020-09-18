@@ -21,18 +21,14 @@ module.exports = {
                 id: ultimoID + 1,
                 nombre: req.body.nombre,
                 email: req.body.email,
-                telefono: null,
-                direccion: null,
+                telefono: undefined,
+                direccion: undefined,
                 contrasenia: bcrypt.hashSync(req.body.contrasenia,10),
                 rol: "usuario"
                 };
             dbUsuarios.push(nuevoUsuario);
             fs.writeFileSync(path.join(__dirname, '..', 'data', 'usuarios.json'), JSON.stringify(dbUsuarios), 'utf-8');
-            res.render('users/login',{
-                title: "Login",
-                css: "login.css",
-                usuario: req.session.usuario
-            })
+            res.redirect('/user/login')
         }else{
             res.render('users/registro',{
                 title: "Registro",
@@ -54,7 +50,7 @@ module.exports = {
         let errors = validationResult(req);
         if(errors.isEmpty()){
             dbUsuarios.forEach(usuario => {
-                if(usuario.mail == req.body.email){
+                if(usuario.email == req.body.email){
                     req.session.usuario = {
                         id: usuario.id,
                         name: usuario.nombre,
@@ -62,7 +58,7 @@ module.exports = {
                     }
                 }
             });
-            res.cookie('usuarioMG', req.session.usuario,{maxAge: 5000})
+            res.cookie('usuarioMG', req.session.usuario,{maxAge: 1000 * 60 * 5})
         res.redirect('/')
         }else{
             res.render('users/login',{
@@ -74,8 +70,16 @@ module.exports = {
             })
         }
     },
-    perfil: function(req, res){
-        res.send('Acá no hay nada')
+    profile: function(req, res){
+        res.render('users/profile', {
+            title: "Mi perfil",
+            dbUser: dbUsuarios,
+            css: "profile.css",
+            usuario: req.session.usuario
+        })
+    },
+    editUser: function(req, res){
+        res.send("hola")
     },
     logout: function(req, res){
         req.session.destroy();
