@@ -1,6 +1,10 @@
 .container{
     overflow: hidden;
 }
+#imagendelproducto{
+    border: 1px solid orangered;
+}
+
 /*lo de abajo pertenece a all products*/
 #allproducts{
     width: 100%;

@@ -21,7 +21,7 @@ let upload = multer({storage:storage});
 //rutas
 router.get('/all', productos.todoslosproductos)
 router.get('/detalle/:id', productos.detalle)
-//***Subir y editar productos (Solo Admin, pero por ahora 'usuario' sera quien tenga acceso para testear session)***
+//***Subir. editar y borrar productos (Solo Admin, pero por ahora 'usuario' sera quien tenga acceso para testear session)***
 router.get('/agregar', sessionUserCheck, productos.agregar)
 router.post('/agregar', upload.any(), productos.publicar)
 

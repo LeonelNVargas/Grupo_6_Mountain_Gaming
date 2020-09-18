@@ -33,7 +33,7 @@
         <% productos.forEach(producto => { %>
         <div class="cajadeproducto">
         <a href="/producto/detalle/<%- producto.id %>" style="text-decoration: none;"><h4 style="color: orange; font-size: small;"><%- producto.name %></h4>
-        <img src="/images/products/<%- producto.image %>" class="img-fluid">
+        <img src="/images/products/<%- producto.image %>" width="150px" height="150px" id="imagendelproducto">
         </a>
         <h6 style="font-weight: bolder;">Precio:</h6><h6 style="color: rgb(0, 255, 0);">$<%- producto.price %></h6>
         </div>

@@ -9,7 +9,8 @@ module.exports = {
     register: function(req, res){
         res.render('users/registro',{
             title: "Registro",
-            css: "registro.css"
+            css: "registro.css",
+            usuario: req.session.usuario
         })
     },
     createUser: function(req, res){
