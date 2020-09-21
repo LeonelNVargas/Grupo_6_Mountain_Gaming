@@ -8,5 +8,13 @@ module.exports = {
         productos: database,
         userDB: userDB
         })
+    },
+    about: function(req,res){
+        res.send('Pendiente')
+    },
+    help: function(req, res){
+        res.render('ayuda', {
+            title: 'Ayuda'
+        })
     }
 }

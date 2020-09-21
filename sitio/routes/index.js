@@ -7,5 +7,7 @@ const cookieCheck = require('../middlewares/cookieCheck')
 
 /* GET home page. */
 router.get('/', cookieCheck, mainController.index)
+router.get('/nosotros', mainController.about)
+router.get('/ayuda', mainController.help)
 
 module.exports = router;
