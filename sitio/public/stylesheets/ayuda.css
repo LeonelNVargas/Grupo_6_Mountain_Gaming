@@ -1,0 +1,43 @@
+.ayudacontainer{
+    width: 100%;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.ayudarow{
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color:  rgba(136, 216, 240, 0.507);
+    border-radius: 5px;
+}
+
+.preguntastitulo{
+    text-align: center;
+}
+
+#infoayuda h6{
+    color: orange;
+}
+
+#infoayuda p{
+    color: white;
+    font-size: small;
+    position: relative;
+    left: 5px;
+}
+
+#infoayuda{
+    padding: 5px;
+    border-top: 1px solid white;
+}
+
+@media(min-width: 768px){
+    .ayudarow{
+        height: 550px;
+    }
+
+    #infoayuda p{
+        font-size: medium;
+    }
+}

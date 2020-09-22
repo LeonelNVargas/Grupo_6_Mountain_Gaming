@@ -14,7 +14,8 @@ module.exports = {
     },
     help: function(req, res){
         res.render('ayuda', {
-            title: 'Ayuda'
+            title: 'Ayuda',
+            css: "ayuda.css"
         })
     }
 }
