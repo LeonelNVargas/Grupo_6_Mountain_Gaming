@@ -80,6 +80,9 @@ i.fas.fa-user {
     list-style: none;
 }
 
+#cajacarrito i{
+    transform: none;
+}
 #cajacarrito i:hover{
     color: red;
 }
@@ -110,7 +113,7 @@ i.fas.fa-cart-plus {
 .row #navegacion ul li a:hover{
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.664));
     border-radius: 20px;
-    color: red
+    color: red;
 }
 
 .row #navegacion ul li a{
