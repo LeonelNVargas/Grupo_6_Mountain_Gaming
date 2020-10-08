@@ -43,6 +43,7 @@ section #cajaproducto h5{
 
 section #cajaproducto h5:hover{
     color: orangered;
+    transition: 1s;
 }
 
 @media (min-width: 768px) {
