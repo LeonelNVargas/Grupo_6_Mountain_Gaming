@@ -20,5 +20,6 @@ router.get('/profile', sessionUserCheck, controller.profile);
 router.get('/editUser', sessionUserCheck, controller.editUser) //<--- Falta por hacer
 //logout
 router.get('/logout', controller.logout)
-
+//prueba
+router.get('/prueba', controller.prueba)
 module.exports = router;

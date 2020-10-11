@@ -5,6 +5,10 @@ const bcrypt = require('bcrypt');
 const fs = require('fs');
 const path = require('path');
 
+//sequelize
+let db = require('../database/models');
+let sequelize = db.sequelize;
+
 module.exports = {
     register: function(req, res){
         res.render('users/registro',{
@@ -87,5 +91,12 @@ module.exports = {
             res.cookie('usuarioMG','',{maxAge:-1})
         }
         return res.redirect('/')
+    },
+    prueba: function(req, res){
+        sequelize.query("SELECT * FROM usuarios")
+        .then(function(resultado){
+            let usuarios = resultado[0];
+            res.send(usuarios)
+        })
     }
 }
