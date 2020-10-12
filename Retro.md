@@ -18,3 +18,14 @@ por ende no se presentaron conflictos.
 
 El resumen de la tercera etapa:  
 Las tareas designadas durante esta etapa, presentaron una dificultad para uno de los integrantes, por ende esto genero un retraso en la realizacion y entraga de las tareas, tambien hay que tomar nota de que la comunicion decayo en perspectiva a la anterior etapa.
+
+## Etapa 4
+
+El resumen de la cuarta etapa:
+A causa de problemas con las computadoras de sus respectivos miembros, hubo una escacez de actividad tanto comunicativa como en el trabajo del mismo. Sin embargo, no fue un impedimento mayor para poder terminar dicho sprint.
+
+## Etapa 5
+
+El resumen de la quinta etapa:
+La comunicación del equipo se encuentra en su punto más bajo, lo que llevo a que
+no se pudiera completar todos los puntos requeridos del sprint.

@@ -1,4 +1,9 @@
 # Daily: Mountain Gaming  
+
+## Sprint n°5
+---- 12/10/2020
+Lautaro: Implemento sequelize, tablas y sus relaciones. Además se agrega el archivo pdf con las mismas. Sin embargo, no logro finalizar los CRUDS del mismo al proyecto.
+
 ## Sprint n°4
 
 ---- 21/09/2020

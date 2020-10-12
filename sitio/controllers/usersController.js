@@ -19,20 +19,22 @@ module.exports = {
     },
     createUser: function(req, res){
         let errors = validationResult(req);
-        let ultimoID = dbUsuarios.length + 1;
         if(errors.isEmpty()){
-            let nuevoUsuario = {
-                id: ultimoID + 1,
-                nombre: req.body.nombre,
-                email: req.body.email,
+            db.Usuarios.create({
+                nombre: req.body.nombre.trim(),
+                email: req.body.email.trim(),
                 telefono: undefined,
                 direccion: undefined,
-                contrasenia: bcrypt.hashSync(req.body.contrasenia,10),
+                contrasenia: bcrypt.hashSync(req.body.contrasenia, 10),
                 rol: "usuario"
-                };
-            dbUsuarios.push(nuevoUsuario);
-            fs.writeFileSync(path.join(__dirname, '..', 'data', 'usuarios.json'), JSON.stringify(dbUsuarios), 'utf-8');
-            res.redirect('/user/login')
+            })
+            .then(function(usuario){
+                console.log(usuario)
+                return res.redirect('/')
+            })
+            .catch(function(errores){
+                console.log(errores)
+            })
         }else{
             res.render('users/registro',{
                 title: "Registro",

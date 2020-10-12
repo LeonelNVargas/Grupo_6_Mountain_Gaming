@@ -21,5 +21,5 @@ router.get('/editUser', sessionUserCheck, controller.editUser) //<--- Falta por 
 //logout
 router.get('/logout', controller.logout)
 //prueba
-router.get('/prueba', controller.prueba)
+router.get('/lista', controller.prueba)
 module.exports = router;

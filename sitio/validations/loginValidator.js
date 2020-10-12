@@ -2,6 +2,9 @@ const {check, validatorResult, body} = require('express-validator');
 const bcrypt = require('bcrypt')
 const dbUsuarios = require('../data/userDB')
 
+//sequelize: Requiero el modelo de Usuarios para luego verificar si existe un registro.
+let db = require('../database/models')
+
 module.exports = [
     check('email')
     .isEmail()
@@ -9,36 +12,5 @@ module.exports = [
 
     check('contrasenia')
     .isLength(1)
-    .withMessage('Contraseña no valida'),
-
-    body('email')
-    .custom(function(value){
-        let usuario = dbUsuarios.filter(user => {
-            return user.email == value
-        })
-        if(usuario == false){
-            return false
-        } else{
-            return true
-        }
-    })
-    .withMessage('El email no existe'),
-
-    body('contrasenia')
-    .custom((value,{req})=>{
-        let resultado = true;
-        dbUsuarios.forEach(usuario =>{
-            if(usuario.email == req.body.email){
-                if(!bcrypt.compareSync(value, usuario.contrasenia)){
-                    resultado = false
-                }
-            }
-        });
-        if(resultado == false){
-            return false
-        } else {
-            return true
-        }
-    })
-    .withMessage("Contraseña incorrecta")
+    .withMessage('Contraseña no valida')
 ]
