@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('partials/head') %>
+<link rel="stylesheet" href="/stylesheets/<%= css %>">
 <body>
     <%- include('partials/header') %>
-<div class="container">
-    <section>
+
+<div class="container editproducto">
+    <section class="sectionEditar">
         <div class="row">
             <div class="col-12 text-center">
                 <!---formulario de edicion, viaja por PUT-->
                 <form action="/producto/editar/<%= producto.id %>?_method=PUT" method="POST">
-                <div>
+                <div class="col-12">
                     <label for="">Editar nombre:</label>
-                    <input type="text" name="nombre" value=<%= producto.name %>>
+                    <input type="text" name="nombre" value=<%= producto.name %> id="inputEditUno">
                 </div>
-                <div>
+                <div class="col-12">
                     <label for="">Editar precio:</label>
-                    <input type="number" name="precio" value="<%= producto.price %>">
+                    <input type="number" name="precio" value="<%= producto.price %>" id="inputEditDos">
                 </div>
-                <div>
+                <div class="col-12">
                     <label for="">Editar descuento:</label>
-                    <input type="number" name="descuento" value="<%= producto.discount %>">
+                    <input type="number" name="descuento" value="<%= producto.discount %>" id="inputEditTres">
                 </div>
-                <div>
+                <div class="col-12">
                     <label for="">Editar stock:</label>
-                    <input type="number" name="cantidad" value="<%= producto.amount %>">
+                    <input type="number" name="cantidad" value="<%= producto.amount %>" id="inputEditCuatro">
                 </div>
-                <div>
-                    <label for="">Editar categoria:</label>
-                    <select><!--todas las categorias---></select>
+                <div class="col-12">
+                    <label for="" id="editarCategoria">Editar categoria:</label>
+                    <select id="selectEditCategoria"><!--todas las categorias---></select>
                 </div>
-                <div>
+                <div class="col-12">
                     <label for="">Editar descripción:</label>
-                    <textarea name="descripcion"><%= producto.description %></textarea>
+                    <textarea id="inputEditCinco" name="descripcion"><%= producto.description %></textarea>
                 </div>
-                <div>
-                    <label for="">Cambiar/subir foto:</label>
-                    <input type="image" name="image">
+                <div class="col-12" style="display: block;">
+                    <label for="" id="editcambiarfoto">Cambiar/subir foto:</label>
+                    <input type="file" name="image" id="inputEditSeis">
                 </div>
-                <div>
+                <div class="col-12">
                     <button type="submit" value="<%= producto.id %>">Confirmar cambios</button>
                 </div>
                 </form>

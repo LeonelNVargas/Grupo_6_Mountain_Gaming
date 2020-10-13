@@ -84,6 +84,7 @@ module.exports = {
         })
         res.render('editarProducto', {
             title: "Editar productos",
+            css: "editProducto.css",
             producto: producto[0]
         })
     },
