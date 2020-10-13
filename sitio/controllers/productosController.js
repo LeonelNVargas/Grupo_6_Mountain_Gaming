@@ -1,9 +1,10 @@
 const database = require('../data/database');
 const fs = require('fs');
 const path = require('path')
+const {validationResult} = require('express-validator');
 
-//traigo el coso de usuarios
-//const 
+//traigo modelo de productos
+const db = require('../database/models') 
 
 module.exports = {
     todoslosproductos: function(req, res){
@@ -33,25 +34,25 @@ module.exports = {
         })
     },
     publicar: function(req, res){
-        let ultimoProducto = 1;
-        database.forEach(producto =>{
-            if(producto.id > ultimoProducto){
-                ultimoProducto = producto.id
-            }
-        })
-        let nuevoProducto = {
-            id: ultimoProducto + 1,
-            name: req.body.nombre,
-            price: req.body.precio,
-            amount: req.body.cantidad,
-            category: req.body.categoria,
-            discount: req.body.descuento,
-            description: req.body.descripcion,
-            image: [(req.files[0])?req.files[0].filename:"noimage.png"]
+        let errores = validationResult(req);
+        if(errores.isEmpty()){
+            db.Productos.create({
+                name: req.body.nombre,
+                description: req.body.descripcion,
+                amount: Number(req.body.cantidad),
+                price: Number(req.body.precio),
+                discount: Number(req.body.descuento),
+                category: req.body.categoria,
+                image: [(req.files[0])?req.files[0].filename:"noimage.png"]
+            })
+            .then(resultado => {
+                console.log(resultado);
+                res.redirect('/producto/misproductos');
+            })
+            .catch(error => {
+                console.log(error)
+            })
         }
-        database.push(nuevoProducto);
-        fs.writeFileSync(path.join(__dirname,"..","data","productos.json"),JSON.stringify(database), 'utf-8')
-        res.redirect('/producto/all')
     },
     misproductos: function(req, res){
        let productos = database

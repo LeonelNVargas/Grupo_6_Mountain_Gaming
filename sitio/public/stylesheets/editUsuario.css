@@ -1,0 +1,40 @@
+.tituloPerfilEdit {
+    margin-top: 10px;
+}
+
+.editarPerfilSection {
+    width: 100%;
+    height: 500px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media(min-width: 768px){
+    .editInfoContenedor {
+        position: relative;
+        top: 20%;
+    }
+
+    .divEdit {
+        margin-top: 5px;
+    }
+    #inputUnoEdit {
+        position: relative;
+        left: 10px;
+    }
+    
+    #inputDosEdit {
+        position: relative;
+        left: 20px;
+    }
+    
+    #inputTresEdit {
+        position: relative;
+        left: 2px;
+    }
+
+    #inputCuatroEdit {
+        position: relative;
+        left: 2px;
+    }
+}

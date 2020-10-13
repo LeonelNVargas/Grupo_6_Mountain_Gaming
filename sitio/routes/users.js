@@ -14,12 +14,14 @@ router.get('/register', controller.register);
 router.post('/register', registerValidator, controller.createUser);
 //ingreso
 router.get('/login', controller.login)
-router.post('/login', loginValidator, controller.processLogin);
+router.post('/login', /*loginValidator,*/ controller.processLogin);
 //perfil
 router.get('/profile', sessionUserCheck, controller.profile);
-router.get('/editUser', sessionUserCheck, controller.editUser) //<--- Falta por hacer
+router.get('/profile/edit', controller.editUser);
+router.put('/profile/:id/edit', controller.processEditUser);
+router.delete('/profile/:id/delete', controller.delete);
 //logout
 router.get('/logout', controller.logout)
 //prueba
-router.get('/lista', controller.prueba)
+router.get('/listausuarios', controller.listarusers)
 module.exports = router;
