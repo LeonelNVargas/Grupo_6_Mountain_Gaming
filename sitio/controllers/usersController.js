@@ -124,18 +124,18 @@ module.exports = {
         }
         return res.redirect('/')
     },
-    delete: function(req, res){
+    delete: function(req, res){  
+        req.session.destroy();
+            if(req.cookies.usuarioMG){
+                res.cookie('usuarioMG', '', {maxAge: -1})
+            }
         db.Usuarios.destroy({
             where: {
-                id: req.session.usuario.id
+                id: req.params.id
             }
         })
         .then(() =>{
-            req.session.destroy();
-            if(req.cookies.usuarioMG){
-                res.cookie('usuarioMG', '', {maxAge: -1})
-                res.redirect('/')
-            }
+            return res.redirect('/', 200)
         })
         .catch(error => {
             console.log(error)

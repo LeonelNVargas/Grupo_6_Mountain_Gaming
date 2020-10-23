@@ -37,20 +37,36 @@ module.exports = {
         let errores = validationResult(req);
         if(errores.isEmpty()){
             db.Productos.create({
-                name: req.body.nombre,
-                description: req.body.descripcion,
-                amount: Number(req.body.cantidad),
-                price: Number(req.body.precio),
-                discount: Number(req.body.descuento),
-                category: req.body.categoria,
-                image: [(req.files[0])?req.files[0].filename:"noimage.png"]
+                nombre: req.body.nombre.trim(),
+                descripcion: req.body.descripcion,
+                cantidad: Number(req.body.cantidad.trim()),
+                precio: Number(req.body.precio.trim()),
+                descuento: Number(req.body.descuento.trim()),
+                id_categoria: req.body.categoria,
+                imagen: (req.files[0])?req.files[0].filename:"noimage.png"
             })
             .then(resultado => {
                 console.log(resultado);
-                res.redirect('/producto/misproductos');
+                res.redirect('/');
             })
             .catch(error => {
                 console.log(error)
+            })
+        } else {
+            db.Categorias.findAll({
+                order: [
+                    'nombre'
+                ]
+            })
+            .then(categorias =>{
+                let oldCategoria;
+                if(req.body.categoria){
+                    categorias.forEach(categoria =>{
+                        if(categoria.id == req.body.categoria){
+                            oldCategoria = categoria.nombre
+                        }
+                    });
+                }
             })
         }
     },
